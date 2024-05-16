@@ -1,0 +1,218 @@
+title: SLZ
+url: SLZ
+sections: 
+  - title: Overview
+    data:
+      - type: paragraph
+        data: | 
+            Smart Loading Zones (SLZs) are a recent city-wide initiative meant to allow delivery drivers safe use of
+            curb
+            space for loading, limit traffic congestion, and reduce carbon emissions produced by idling cars in
+            Pittsburgh,
+            PA.
+            
+
+            With a soft launch in mid-2023, SLZs have been met with largely negative and critical reception from native
+            Pittsburghers. Over several months, our team was challenged to evaluate the current state, understand user
+            pain
+            points, identify high-priority areas of improvement, and propose solutions to better the overall user
+            experience
+            of SLZs.
+      - type: grid
+        data:
+          - type: grid-item
+            data:
+              - type: subtitle
+                data: Role
+                
+              - type: paragraph
+                data: UX Researcher & Designer
+
+          - type: grid-item
+            data:
+              - type: subtitle
+                data: Client
+                
+              - type: paragraph
+                data: City of Pittsburgh
+
+          - type: grid-item
+            data:
+              - type: subtitle
+                data: Project Timeline
+                
+              - type: paragraph
+                data: Aug 2023 - Dec 2023
+
+          - type: grid-item
+            data:
+              - type: subtitle
+                data: Teammates
+                
+              - type: paragraph
+                data: |
+                      Erin Sawyer
+                      Gaurav Nemade
+                      Justine Chou
+
+      - type: subtitle
+        data: Methods
+
+      - type: grid
+        data: 
+          - type: grid-item
+            data: 
+              - type: subsubtitle
+                data: Research
+              
+              - type: paragraph
+                data: "Directed Storytelling / User Interviews / Contextual Inquiry / Ethnographic Research / Personas / Heuristic Evaluation / Affinity Diagramming / Empathy Mapping / Think-Aloud Protocol / Speed Dating / Storyboarding"
+
+          - type: grid-item
+            data: 
+              - type: subsubtitle
+                data: Design
+
+              - type: paragraph
+                data: Figma / Usability Testing
+
+      - type: important
+        title: Context
+        data:
+          - type: image
+            data: bulb.svg
+
+          - type: callout
+            data: | 
+              Designated by purple curbs, SLZs employ innovative camera technology to read license plates and analyze
+              real-time curbside activity, automating payment for the time a vehicle spends at a purple curb. Registered
+              users are billed by the minute for the exact time spent in the zone. Registration is a one-time process,
+              wherein users access an online web application by scanning a QR-code on the sign.
+
+  - title: Defining The Problem Space
+    data:
+      - type: paragraph
+        data: Our team utilized abstraction laddering to define the problem space. By analyzing various components of SLZs at various levels of abstraction from the concrete “how” to the abstract “why,” we realized that a number of our concerns centered around accessibility.
+      
+      - type: image
+        data: images/image6.svg
+
+      - type: paragraph
+        data: "Particularly passionate about this space, we honed in on the following problem statement:" 
+      
+      - type: important
+        title: How might we...
+        data: 
+          - type: image
+            data: bulb.svg
+
+          - type: callout
+            data: Make SLZs more accessible and equitable for drivers with disabilities, expanding their benefits to more community members?
+
+          - type: spacer
+
+          - type: subsubtitle
+            data: Why does this problem matter?
+
+          - type: callout
+            data: Parking is a key factor contributing to community and economic engagement, particularly with local businesses. As we consider solutions to issues with parking and loading, inclusiveness is critical. Accessibility should be at the forefront of this initiative, not an afterthought.
+
+  - title: Research
+    data:
+      - type: numbers
+        data: "01"
+
+      - type: subtitle
+        data: Whitepaper Research
+
+      - type: paragraph
+        data: Referencing press releases issued by the city government, the official SLZ pamphlet put forth by the Pittsburgh parking authority, and other newspaper and social media material, I conducted comprehensive white paper research. I was particularly interested in investigating both the nitty-gritty specifics of the program infrastructure as well as the general public’s sentiment towards it. My research served to highlight the growing confusion and unease surrounding the entire initiative.
+
+      - type: grid
+        data: 
+          - type: grid-item
+            data: 
+              - type: subsubtitle
+                data: Main Insight
+
+              - type: emphasis
+                data: There exists no policy or measure that accommodates people with disabilities time-wise or monetarily when using SLZs. Either this is an issue of lack of clarity or this is a violation of the Americans with Disabilities Act.
+
+          - type: grid-item
+            data: 
+              - type: image
+                data: images/image15.png
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: numbers
+        data: "02"
+
+      - type: subtitle
+        data: Experiential Research
+
+      - type: paragraph
+        data: While white paper research served to solidify my understanding of the problem, I wanted to better empathize with users. I consequently engaged in some experiential research, where I first bodystormed through the process of parking in an SLZ and registering for the program myself. I subsequently conducted ethnographic research, spending time observing zones in multiple locations and people’s interactions with them.
+
+      - type: grid
+        data: 
+          - type: grid-item
+            data: 
+              - type: subsubtitle
+                data: Main Insight
+
+              - type: emphasis
+                data: People avoid parking along purple curbsides, and only utilize them when there is absolutely no other available space. This breeds inefficiency because the designated zone is underutilized during downtimes.
+
+          - type: grid-item
+            data: 
+              - type: image
+                data: images/image15.png
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: numbers
+        data: "04"
+
+      - type: subtitle
+        data: User Interviews
+
+      - type: paragraph
+        data: While white paper research served to solidify my understanding of the problem, I wanted to better empathize with users. I consequently engaged in some experiential research, where I first bodystormed through the process of parking in an SLZ and registering for the program myself. I subsequently conducted ethnographic research, spending time observing zones in multiple locations and people’s interactions with them.
+
+      - type: grid
+        data: 
+          - type: grid-item
+            data: 
+              - type: subsubtitle
+                data: Lack of Awareness
+
+              - type: quote
+                data: Is there leniency for disabled drivers and passengers ... or will I have to pay more because of my disability?
+
+              - type: emphasis
+                data: Drivers with disabilities are unaware if they can utilize SLZs due to lack of clarity surrounding available accommodations. 
+
+          - type: grid-item
+            data: 
+              - type: subsubtitle
+                data: Missed Opportunities
+
+              - type: quote
+                data: Is there leniency for disabled drivers and passengers ... or will I have to pay more because of my disability?
+
+              - type: emphasis
+                data: Drivers with disabilities are unaware if they can utilize SLZs due to lack of clarity surrounding available accommodations. 
+
+  - title: Ideation
+    data: 
+      - type: paragraph
+        data: | 
+          henlo
+          
+          - hollo
+          - bye
