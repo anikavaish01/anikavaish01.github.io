@@ -1,3 +1,5 @@
+name: Build pages
+on: [push]
 jobs:
   deploy:
     environment:
@@ -12,7 +14,7 @@ jobs:
 
       - name: setup bun
         uses: oven-sh/setup-bun@v1
-        
+
       - name: build
         run: |
           bun install
