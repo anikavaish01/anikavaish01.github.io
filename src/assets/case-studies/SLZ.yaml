@@ -4,8 +4,8 @@ colors:
   accent: "034FE4"
   boxes: "151E2C"
   subtitle: "395996"
-  icon-primary: "C79127"
-  icon-secondary: "FFCE31" 
+  icon-primary: "FFCE31"
+  icon-secondary: "C79127"
 header:
   title: Smart Loading Zones
   description: Improving Accessibility Outcomes in Transportation Services Across Pittsburgh, PA 
@@ -90,7 +90,7 @@ sections:
         title: Context
         data:
           - type: image
-            data: bulb.svg
+            data: context
 
           - type: callout
             data: | 
@@ -114,7 +114,7 @@ sections:
         title: How might we...
         data: 
           - type: image
-            data: bulb.svg
+            data: question
 
           - type: callout
             data: Make SLZs more accessible and equitable for drivers with disabilities, expanding their benefits to more community members?

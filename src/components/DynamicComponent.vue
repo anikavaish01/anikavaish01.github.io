@@ -5,7 +5,7 @@
             <SubtitleWrapper v-else-if="data.type === 'subtitle'" :title="(data.data as string)" />
             <SubsubtitleWrapper v-else-if="data.type === 'subsubtitle'" :title="(data.data as string)" :color="colors.subtitle" />
             <GridWrapper v-else-if="data.type === 'grid'" :data="(data.data as Daum[])" :colors="colors" />
-            <ImageWrapper v-else-if="data.type === 'image'" :image="(data.data as string)" />
+            <ImageWrapper v-else-if="data.type === 'image'" :image="(data.data as string)" :colors="colors"/>
             <CalloutTextWrapper v-else-if="data.type === 'callout'" :content="(data.data as string)" />
             <NumbersWrapper v-else-if="data.type === 'numbers'" :title="(data.data as string)" :color="colors.accent" /> 
             <EmphasisWrapper v-else-if="data.type === 'emphasis'" :content="(data.data as string)" />

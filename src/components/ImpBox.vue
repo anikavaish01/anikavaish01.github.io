@@ -1,7 +1,7 @@
 <template>
     <div class="imp-box" :style="`background-color: #${colors.boxes}`">
       <div class="imp-box-title">{{ title }}</div>
-      <img class="imp-box-icon" :src="iconUrl" />
+      <ImageWrapper :colors="colors" :image="(icon?.data as string)" />
       <DynamicComponent :colors="colors" :items="dataFiltered" />
     </div>
 </template>
@@ -9,11 +9,9 @@
 <script setup lang="ts">
 import { computed, defineProps } from 'vue'
 import DynamicComponent from './DynamicComponent.vue';
+import ImageWrapper from './ImageWrapper.vue';
 const { data, title, colors } = defineProps<{title?: string, data: Daum[], colors: CaseStudy['colors']}>()
 const icon = computed(() => data.find(val => val.type === 'image'))
-const iconUrl = computed(() => {
-    return new URL(`../assets/${icon.value?.data}`, import.meta.url).toString()
-})
 
 const dataFiltered = computed(() => {
   let foundImage = false
@@ -61,5 +59,13 @@ const dataFiltered = computed(() => {
 <style>
 .imp-box * {
   color: white !important;
+}
+
+.imp-box > img, .imp-box > svg {
+  position: absolute;
+  top: 0;
+  margin-top: -55px;
+  left: calc(165px + 62px);
+  width: initial !important;
 }
 </style>
