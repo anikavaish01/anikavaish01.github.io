@@ -1,5 +1,15 @@
 title: SLZ
 url: SLZ
+colors:
+  accent: "034FE4"
+  boxes: "151E2C"
+  subtitle: "395996"
+  icon-primary: "C79127"
+  icon-secondary: "FFCE31" 
+header:
+  title: Smart Loading Zones
+  description: Improving Accessibility Outcomes in Transportation Services Across Pittsburgh, PA 
+  image: images/Frame31.svg
 sections: 
   - title: Overview
     data:

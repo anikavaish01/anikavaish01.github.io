@@ -1,15 +1,15 @@
 <template>
-    <div class="imp-box">
+    <div class="imp-box" :style="`background-color: #${colors.boxes}`">
       <div class="imp-box-title">{{ title }}</div>
       <img class="imp-box-icon" :src="iconUrl" />
-      <DynamicComponent :items="dataFiltered" />
+      <DynamicComponent :colors="colors" :items="dataFiltered" />
     </div>
 </template>
 
 <script setup lang="ts">
 import { computed, defineProps } from 'vue'
 import DynamicComponent from './DynamicComponent.vue';
-const { data, title } = defineProps<{title?: string, data: Daum[]}>()
+const { data, title, colors } = defineProps<{title?: string, data: Daum[], colors: CaseStudy['colors']}>()
 const icon = computed(() => data.find(val => val.type === 'image'))
 const iconUrl = computed(() => {
     return new URL(`../assets/${icon.value?.data}`, import.meta.url).toString()
@@ -32,7 +32,6 @@ const dataFiltered = computed(() => {
   position: relative;
   margin-left: calc(-165px - 15px);
   margin-right: -165px;
-  background-color: #002368;
   color: white !important;
   padding-left: calc(165px + 172px );
   padding-right: calc(165px + 172px );

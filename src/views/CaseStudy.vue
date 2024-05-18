@@ -1,15 +1,18 @@
 <template>
   <div class="case-study-main">
-    <div class="title-image-wrapper">
-      <img class="title-image"
-        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.alphacoders.com%2F203%2F203381.jpg&f=1&nofb=1&ipt=911574653290e9b80b7ece13640c57efc9acba5f696686b31d995a0a0f039d7a&ipo=images" />
+    <div class="title-image-wrapper" :style="`background-color: #${caseStudy.colors.boxes};`">
+      <div class="title-text-wrapper">
+        <div class="title-text">{{ caseStudy.header.title }}</div>
+        <div class="title-description">{{ caseStudy.header.description }}</div>
+      </div>
+      <img class="title-image" :src="imageUrl" />
     </div>
 
     <div class="content">
       <SectionWrapper v-for="items in caseStudy.sections" :key="items.title">
-        <TitleWrapper :title="items.title" />
+        <TitleWrapper :color="caseStudy.colors.accent" :title="items.title" />
         <div class="section-content">
-          <DynamicComponent :items="items.data" />
+          <DynamicComponent :items="items.data" :colors="caseStudy.colors" />
         </div>
 
       </SectionWrapper>
@@ -23,8 +26,13 @@
 import DynamicComponent from '@/components/DynamicComponent.vue'
 import SectionWrapper from '@/components/SectionWrapper.vue'
 import TitleWrapper from '@/components/TitleWrapper.vue';
+import { computed } from 'vue';
 
-const { caseStudy } = defineProps<{caseStudy: CaseStudy}>()
+const { caseStudy } = defineProps<{ caseStudy: CaseStudy }>()
+
+const imageUrl = computed(() => {
+  return new URL(`../assets/${caseStudy.header.image}`, import.meta.url).toString()
+})
 
 </script>
 
@@ -35,14 +43,39 @@ const { caseStudy } = defineProps<{caseStudy: CaseStudy}>()
 }
 
 .title-image-wrapper {
+  display: flex;
+  position: relative;
   width: 100%;
-  height: 80vh;
+  height: 804px;
 }
 
 .title-image {
+  position: absolute;
   height: 100%;
-  width: 100%;
+  width: 60%;
   object-fit: cover;
+  right: 0;
+}
+
+.title-text-wrapper {
+  /* position: absolute; */
+  padding-top: 248px;
+  padding-left: 88px;
+  width: 60%
+}
+
+.title-text {
+  font-size: 64px;
+  font-weight: 900;
+  color: white;
+
+}
+
+.title-description {
+  font-size: 24px;
+  font-weight: 900;
+  width: 60%;
+  color: white;
 }
 
 .content {

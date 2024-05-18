@@ -1,7 +1,7 @@
 <template>
     <div class="details">
         <div v-for="(item, index) in data" :key="`${item.type}-${index}`" class="detail-item">
-            <DynamicComponent v-if="item.type === 'grid-item'" :items="(item.data as Daum[])" />
+            <DynamicComponent v-if="item.type === 'grid-item'" :items="(item.data as Daum[])" :colors="props.colors" />
         </div>
     </div>
 </template>
@@ -11,9 +11,7 @@
 import DynamicComponent from './DynamicComponent.vue'
 import { computed } from 'vue'
 
-const props = defineProps({
-    data: Object
-})
+const props = defineProps<{data: Daum[], colors: CaseStudy['colors']}>()
 
 const data = computed(() => props.data as Daum[])
 </script>

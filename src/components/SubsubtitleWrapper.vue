@@ -1,11 +1,12 @@
 <template>
-    <h2 class="subsubtitle">{{ title }}</h2>
+    <h2 class="subsubtitle" :style="`color: #${color}`">{{ title }}</h2>
 </template>
 
 <script lang="ts">
     export default {
         props: {
-            title: String
+            title: String,
+            color: String
         }
     }
 </script>
@@ -14,7 +15,6 @@
 .subsubtitle {
   font-size: 20px;
   font-weight: 700;
-  color: #034FE4;
   margin-bottom: 15px;
 }
 </style>

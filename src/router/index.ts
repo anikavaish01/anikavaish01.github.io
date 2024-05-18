@@ -3,7 +3,6 @@ import CaseStudyComponent from '@/views/CaseStudy.vue'
 
 const caseStudies = import.meta.glob('@/assets/case-studies/*.yaml', {eager: true})
 
-console.log(caseStudies)
 const routes = []
 for (const caseStudy of Object.values(caseStudies as Record<string, {default: CaseStudy}>)) {
   routes.push({

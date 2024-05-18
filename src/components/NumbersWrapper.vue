@@ -1,11 +1,12 @@
 <template>
-    <div class="numbers">{{ title }}</div>
+    <div class="numbers" :style="`color: #${color}`">{{ title }}</div>
 </template>
 
 <script lang="ts">
     export default {
         props: {
-            title: String
+            title: String,
+            color: String
         }
     }
 </script>
@@ -14,6 +15,5 @@
 .numbers {
   font-size: 22px;
   font-weight: 900;
-  color: #034FE4
 }
 </style>
