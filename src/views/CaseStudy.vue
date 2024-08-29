@@ -9,8 +9,8 @@
     </div>
 
     <div class="content">
-      <SectionWrapper v-for="items in caseStudy.sections" :key="items.title">
-        <TitleWrapper :color="caseStudy.colors.accent" :title="items.title" />
+      <SectionWrapper v-for="items in caseStudy.sections" :key="items.title" :color="items.colored ? caseStudy.colors['accent-light'] : undefined" :icon="items.icon">
+        <SectionTitle :color="caseStudy.colors.accent" :content="items.title" />
         <div class="section-content">
           <DynamicComponent :items="items.data" :colors="caseStudy.colors" />
         </div>
@@ -24,8 +24,8 @@
 
 
 import DynamicComponent from '@/components/DynamicComponent.vue'
+import SectionTitle from '@/components/SectionTitle.vue';
 import SectionWrapper from '@/components/SectionWrapper.vue'
-import TitleWrapper from '@/components/TitleWrapper.vue';
 import { computed } from 'vue';
 
 const { caseStudy } = defineProps<{ caseStudy: CaseStudy }>()
@@ -36,7 +36,7 @@ const imageUrl = computed(() => {
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .case-study-main {
   width: 100%;
   height: 100%;
@@ -78,11 +78,13 @@ const imageUrl = computed(() => {
   color: white;
 }
 
-.content {
-  margin: 87px 165px;
+.section {
 }
 
 .section-content {
-  margin-left: 15px;
+  max-width: min(1200px, 100vw - 50px);
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: 15px; */
 }
 </style>

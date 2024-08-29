@@ -1,19 +1,19 @@
 <template>
-    <h2 class="subtitle">{{ title }}</h2>
+    <div class="small-sub-header">{{ content }}</div>
 </template>
 
 <script lang="ts">
     export default {
         props: {
-            title: String
+            content: String,
         }
     }
 </script>
 
 <style scoped>
-.subtitle {
-  font-size: 24px;
-  font-weight: 900;
+.small-sub-header {
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 </style>

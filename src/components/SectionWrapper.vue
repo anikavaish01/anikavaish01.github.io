@@ -1,15 +1,33 @@
 <template>
-    <div class="section">
+    <div class="section" :style="`background-color: #${color}; padding-top: ${color ? 85 : 0}px; padding-bottom: ${color ? 85 : 0}px`">
+        <ImageWrapper class="section-image" v-if="icon" :image="icon" />
         <slot></slot>
     </div>
 </template>
 
 <script setup lang="ts">
-
+import ImageWrapper from './ImageWrapper.vue';
 </script>
 
-<style scoped>
+<script lang="ts">
+    export default {
+        props: {
+            color: String,
+            icon: String
+        }
+    }
+</script>
+
+<style scoped lang="scss">
 .section {
-    margin-bottom: 130px;
+    position: relative;
+    margin-top: 110px;
+}
+
+.section-image {
+    position: absolute;
+    left: calc((100vw - min(1200px, 100vw - 100px)) / 2);
+    transform: translateY(-50%) translateX(-50%);
+    top: 0;
 }
 </style>

@@ -14,8 +14,8 @@
 <style scoped>
 .title {
   padding-left: 13px;
-  font-size: 36px;
-  font-weight: 900;
+  font-size: 55px;
+  font-weight: 700;
   margin-bottom: 58px;
 }
 </style>

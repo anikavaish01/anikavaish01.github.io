@@ -40,8 +40,9 @@ import { computed } from 'vue';
 
 <style scoped>
 .paragraph {
-  font-size: 18px;
-  margin-bottom: 92px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 35px;
 }
 
 .bullets {

@@ -2,19 +2,17 @@
     <div>
         <div v-for="(data, index) in data" :key="`${data.type}-${index}`">
             <ParagraphWrapper v-if="data.type === 'paragraph'" :content="(data.data as string)" />
-            <SubtitleWrapper v-else-if="data.type === 'subtitle'" :title="(data.data as string)" />
-            <SubsubtitleWrapper v-else-if="data.type === 'subsubtitle'" :title="(data.data as string)" :color="colors.subtitle" />
-            <GridWrapper v-else-if="data.type === 'grid'" :data="(data.data as Daum[])" :colors="colors" />
+            <SubHeaderWrapper v-else-if="data.type === 'sub-header'" :content="(data.data as string)" />
+            <GridWrapper v-else-if="data.type === 'grid'" :data="(data.data as Daum[])" :colors="colors" :color="data.color"/>
             <ImageWrapper v-else-if="data.type === 'image'" :image="(data.data as string)" :colors="colors"/>
-            <CalloutTextWrapper v-else-if="data.type === 'callout'" :content="(data.data as string)" />
-            <NumbersWrapper v-else-if="data.type === 'numbers'" :title="(data.data as string)" :color="colors.accent" /> 
+            <NumbersWrapper v-else-if="data.type === 'numbers'" :content="(data.data as string)" :color="colors.accent" /> 
             <EmphasisWrapper v-else-if="data.type === 'emphasis'" :content="(data.data as string)" />
-            <QuoteWrapper v-else-if="data.type === 'quote'" :content="(data.data as string)" />
             <BulletWrapper v-else-if="data.type === 'bullets'" :data="(data.data as string[])" />              
-            <SpacerWrapper v-else-if="data.type === 'spacer'" />
-            <div v-else-if="data.type === 'important'">
-                <ImpBox :colors="colors" :title="data.title" :data="(data.data as Daum[])" />
-            </div>
+            <SpacerWrapper v-else-if="data.type === 'spacer'" :height="(data.data as string)" />
+            <GraphicText v-else-if="data.type === 'graphic-text'" :content="(data.data as string)" :colored="(data.colored as boolean)"      />
+            <HeaderWrapper v-else-if="data.type === 'header'" :content="(data.data as string)" />
+            <CaptionWrapper v-else-if="data.type === 'caption'" :content="(data.data as string)" />
+            <SmallSubHeader v-else-if="data.type === 'small-sub-header'" :content="(data.data as string)" />
         </div>
     </div>
 </template>
@@ -22,17 +20,18 @@
 <script setup lang="ts">
 import ParagraphWrapper from '@/components/ParagraphWrapper.vue'
 import GridWrapper from '@/components/GridWrapper.vue'
-import SubtitleWrapper from '@/components/SubtitleWrapper.vue'
-import SubsubtitleWrapper from '@/components/SubsubtitleWrapper.vue'
-import ImpBox from '@/components/ImpBox.vue'
+import SubHeaderWrapper from '@/components/SubheaderWrapper.vue'
 import ImageWrapper from '@/components/ImageWrapper.vue'
-import CalloutTextWrapper from '@/components/CalloutTextWrapper.vue'
 import EmphasisWrapper from '@/components/EmphasisWrapper.vue'
-import QuoteWrapper from '@/components/QuoteWrapper.vue'
 import BulletWrapper from '@/components/BulletWrapper.vue'
 import NumbersWrapper from '@/components/NumbersWrapper.vue'
 import SpacerWrapper from '@/components/SpacerWrapper.vue'
+import GraphicText from './GraphicText.vue'
+import HeaderWrapper from './HeaderWrapper.vue'
 import { computed } from 'vue'
+import CaptionWrapper from './CaptionWrapper.vue'
+import SmallSubHeader from './SmallSubHeader.vue'
+ 
 
 const { items, colors } = defineProps<{items: Daum[], colors: CaseStudy['colors']}>()
 const data = computed(() => items as Daum[])

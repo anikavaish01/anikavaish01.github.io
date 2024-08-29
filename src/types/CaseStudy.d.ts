@@ -7,10 +7,9 @@ interface CaseStudy {
     }
     colors: {
         accent: string
+        "accent-light": string
         boxes: string
         subtitle: string
-        "icon-primary": string
-        "icon-secondary": string   
     }
     url: string
     sections: Section[]
@@ -18,11 +17,16 @@ interface CaseStudy {
 
 interface Section {
     title: string
+    icon: string
+    colored: boolean
     data: Daum[]
 }
 
 interface Daum {
     type: string
     data: Daum[] | string | string[]
+    colored?: boolean
+    color?: string
+    "text-color"?: string
     title?: string
 }
