@@ -1,0 +1,678 @@
+title: PNC
+url: PNC
+colors:
+  accent: "7B6251"
+  accent-light: "F3EAE3"
+  boxes: "151E2C"
+  subtitle: "000000"
+header:
+  title: RetireReady
+  description: A collaborative retirement planning financial tool leveraging emerging AI technology
+  image:
+sections:
+  - title: Overview
+    data:
+      - type: grid
+        data:
+          - type: grid-item
+            data:
+              - type: sub-header
+                data: Role
+
+              - type: paragraph
+                data: Research & Design Lead
+
+          - type: grid-item
+            data:
+              - type: sub-header
+                data: Client
+
+              - type: paragraph
+                data: PNC Bank
+
+          - type: grid-item
+            data:
+              - type: sub-header
+                data: Project Timeline
+
+              - type: paragraph
+                data: Jan 2024 - Apr 2024
+
+          - type: grid-item
+            data:
+              - type: sub-header
+                data: Teammates
+
+              - type: paragraph
+                data: |
+                  1 Product Manager
+                  3 Product Strategists
+                  1 Data Analyst
+
+      - type: sub-header
+        data: Methods
+
+      - type: grid
+        data:
+          - type: grid-item
+            data:
+              - type: small-sub-header
+                data: Research
+
+              - type: paragraph
+                data: Competitive Analysis / Market Research / Directed Storytelling / User Interviews / Surveys / Quantitative Data Analysis /Affinity Diagramming
+
+          - type: grid-item
+            data:
+              - type: small-sub-header
+                data: Design
+
+              - type: paragraph
+                data: Storyboarding / Quick Ideas / Wireframing / Concept Testing
+
+  - title: Context
+    data:
+      - type: header
+        data: |
+          The U.S. population is older today than it has ever been, with the number of Americans aged 65 and above expected to rise significantly, from 58 million in 2022 to 82 million by 2050, representing a 47% increase.
+
+      - type: sub-header
+        data: Meet Maria and Romana.
+
+      - type: paragraph
+        data: |
+          Maria is a 73-year-old woman living in Pittsburgh, who recently lost her husband of 54 years to cancer. The loss was devastating, leaving Maria utterly heartbroken and overwhelmed by the uncertainty of her physical and financial future. While mostly independent, Maria faces her own health challenges, having been diagnosed with early onset Parkinson’s disease; she has trouble moving around, and requires assistance with daily tasks like loading the dishwasher, cooking, and sweeping the floors.
+
+      - type: paragraph
+        data: |
+          Her daughter, Romana, is a 42-year-old nurse living in another state with her own family. Despite her strong desire to help and knowledge that her mother’s physical condition will worsen, Romana feels overwhelmed and unsure how to support her mother.
+
+      - type: spacer
+
+      - type: image
+        data: images/Maria and Romana.png
+
+  - title: Considering these stories & statistics
+    data:
+      - type: header
+        data: |
+          How might PNC Bank support adult children and their aging parents, like Maria and Romana, in planning for their futures, specifically the costs associated with assisted daily living services?
+
+      - type: paragraph
+        data: |
+          In collaboration with the Experience Design team at PNC, I led multiple research efforts to understand the current landscape of financial planning and aging, culminating in the design and development of a new product, RetireReady.
+
+  - icon: bulb
+    title: But what are assisted daily living services?
+    colored: true
+    data:
+      - type: sub-header
+        data: |
+          Assisted daily living services (ADLS) include a range of support provided to individuals needing assistance with daily activities due to age, disability, or health issues. These services encompass tasks such as bathing, dressing, meal preparation, medication administration, housekeeping, transportation, and companionship.
+
+  - title: User Interviews
+    data:
+      - type: header
+        data: |
+          I conducted 20 interviews with key stakeholders and discovered a widespread lack of preparedness, limited knowledge, and psychological / cultural barriers that significantly hinder financial planning for aging.
+
+      - type: paragraph
+        data: |
+          Given the broad scope of the project and various stakeholders involved, we initially did not define a specific problem statement. To evaluate the current state of post-retirement planning and the costs associated with aging, I crafted an interview guide, adopted a directed storytelling approach, and conducted 1-hour long sessions with over 20 individuals, including aging parents (55+), adult children (25-55), caregivers, and financial advisors.
+
+      - type: paragraph
+        data: |
+          During our interviews, Maria and Romana provided valuable insights into their experiences. Maria shared her fears about her financial future and her health, while Romana expressed her challenges in balancing her career, family, and supporting her mother. These conversations highlighted the emotional and logistical complexities faced by families in similar situations.
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#FAFAFA"
+            data:
+              - type: numbers
+                data: "01"
+
+              - type: sub-header
+                data: |
+                  Adult children are often too busy and typically unsure how to intervene in their parents' finances.
+
+              - type: paragraph
+                data: |
+                  - Often unprepared for the financial and care needs of their aging parents.
+                  - Generally not proactive and prefer to respect their parents' independence.
+                  - In their own finances, tend to focus on immediate needs rather than long-term planning.
+
+              - type: image
+                data: images/PNC quote 1.svg
+
+          - type: grid-item
+            color: "#FAFAFA"
+            data:
+              - type: numbers
+                data: "02"
+
+              - type: sub-header
+                data: |
+                  Aging parents see their finances as a symbol of independence and prefer not to burden their children with financial concerns.
+
+              - type: paragraph
+                data: |
+                  - Uncomfortable discussing aging due to psychological barriers.
+                  - Fear of losing independence, leading to resistance to help and avoidance of end-of-life planning discussions.
+
+              - type: image
+                data: images/PNC quote 2.svg
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#FAFAFA"
+            data:
+              - type: numbers
+                data: "03"
+
+              - type: sub-header
+                data: |
+                  Professional caregivers observe that most families are unaware of the costs associated with aging.
+
+              - type: paragraph
+                data: |
+                  - Less than 20% of individuals in Pennsylvania have long-term care insurance.
+                  - Preventative health measures are often not covered by insurance, while reactive measures are.
+                  - Continuing care facilities are typically restricted to the extremely wealthy.
+
+              - type: image
+                data: images/PNC quote 3.svg
+
+          - type: grid-item
+            color: "#FAFAFA"
+            data:
+              - type: numbers
+                data: "04"
+
+              - type: sub-header
+                data: |
+                  Financial advisors observe that most families are unprepared to handle costs associated with aging.
+
+              - type: paragraph
+                data: |
+                  - Most individuals wait until their 50s to seriously plan for retirement.
+                  - Financial needs vary with life stages, from student loan repayment in the 20s to healthcare planning in the 60s.
+                  - The complexity of managing finances increases with life changes.
+
+              - type: image
+                data: images/PNC quote 4.svg
+
+  - title: Surveys
+    colored: true
+    data:
+      - type: header
+        data: |
+          I deployed three targeted surveys with 150 respondents, which collectively revealed market demand for a product that supports collaborative financial planning.
+
+      - type: paragraph
+        data: |
+          To explore the potential market for a collaborative financial planning tool, we deployed three surveys targeting aging parents and adult children (split into two age brackets). I led the development of these surveys, focusing on questions probing sentiments related to planning for financial, medical, and ADLS expenses and collaboration with trusted individuals.
+
+      - type: paragraph
+        data: |
+          Maria and Romana's responses were particularly insightful. Maria expressed a desire for a tool that could simplify her financial planning and involve her daughter in the process. Romana emphasized the need for clear, accessible information and resources to help her support her mother effectively.
+
+      - type: grid
+        color: "#FAF7F4"
+        data:
+          - type: grid-item
+            data:
+              - type: numbers
+                data: "01"
+
+              - type: sub-header
+                data: Knowledge v. Desire
+
+              - type: paragraph
+                data: |
+                  Adult children have a high willingness to support their aging parents but low awareness of how to help, pinpointing a critical area for educational interventions.
+
+          - type: grid-item
+            data:
+              - type: image
+                data: images/PNC awareness graph.svg
+
+              - type: caption
+                data: |
+                  Questions were coded with whether they measure “willingness” or “awareness.” Averages were computed based on responses given on a 5-point Likert scale.
+
+      - type: grid
+        color: "#FAF7F4"
+        data:
+          - type: grid-item
+            data:
+              - type: numbers
+                data: "02"
+
+              - type: sub-header
+                data: Amenability With Sharing
+
+              - type: paragraph
+                data: |
+                  Roughly 75% of individuals share information with their trusted person to a great extent. Aging parents want their trusted person to be involved in various aspects of the aging process.
+
+          - type: grid-item
+            data:
+              - type: image
+                data: images/PNC sharing graph.svg
+
+              - type: caption
+                data: |
+                  Questions probed comfortability sharing different forms of personal information on a 5-point Likert scale. Percentage respondents was calculated as the number of respondents selecting a response divided by the total number of respondents.
+
+      - type: grid
+        color: "#FAF7F4"
+        data:
+          - type: grid-item
+            data:
+              - type: numbers
+                data: "03"
+
+              - type: sub-header
+                data: Overconfidence & Overoptimism
+
+              - type: paragraph
+                data: |
+                  While our interviews with caregivers revealed that 100% of people will end up requiring ADLS at some point in the future, a majority of aging parents do not believe they will need such resources.
+
+          - type: grid-item
+            data:
+              - type: image
+                data: images/PNC overconfidence graph.svg
+
+              - type: caption
+                data: |
+                  A multi-select question allowed respondents to select all the resources they foresee themselves requiring in the future. Percentage respondents was calculated as the number of respondents selecting a response divided by the total number of respondents.
+
+  - title: Using these insights, we concretely synthesized major pain points
+    data:
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#7B6251"
+            data:
+              - type: paragraph
+                data: |
+                  Adult children are typically not involved in their parents’ finances until a trigger event occurs.
+
+          - type: grid-item
+            color: "#B2A49A"
+            data:
+              - type: paragraph
+                data: |
+                  Both adult children and aging parents are often uncertain about what to plan for and what help/services they will need.
+
+          - type: grid-item
+            color: "#7B6251"
+            data:
+              - type: paragraph
+                data: |
+                  There is a lack of awareness about options for financial planning for retirement.
+
+          - type: grid-item
+            color: "#B2A49A"
+            data:
+              - type: paragraph
+                data: |
+                  There is a general reluctance to think about aging, leading to cursory financial planning.
+
+  - title: Ideation
+    data:
+      - type: header
+        data: |
+          I led 2 ideation sessions, wherein we brainstormed a number of different ideas like multiple permissions on a shared financial dashboard, educational resources on planning for ADLS, and an AI-powered budgeting tool, etc.
+
+      - type: paragraph
+        data: |
+          Maria and Romana's needs were central to our ideation process. We envisioned features that would allow Romana to help manage Maria's finances remotely, provide educational resources to both of them, and use AI to predict future expenses based on Maria's health and lifestyle.
+
+      - type: paragraph
+        data: |
+          We had all these disparate ideas, but we didn’t have a clear idea about which direction to move in and which solutions actually served our customer needs. We subsequently decided to map out a solution matrix and check off what specific segment needs were being met.
+
+      - type: paragraph
+        data: |
+          Here, we made the crucial decision to tease apart our aging parents into a pre-retirees segment from the ages of 50 - 65, because our customer interviews and survey insights had revealed that lifestyles change very significantly pre-retirement and post-retirement, and needs change accordingly.
+
+      - type: spacer
+      - type: spacer
+
+      - type: image
+        data: images/PNC solution matrix.svg
+
+      - type: caption
+        data: |
+          A solution matrix with all the proposed feature solutions on the left, and the market segments on the right. Green checks signify a customer need being met, while red crosses signify a solution that is not optimal, not necessary, or not useful.
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: sub-header
+        data: |
+          From our solution matrix, we realized that most solutions applied to all three segments. We were prompted to reframe: we could combine these functionalities into an all-in-one retirement planning platform, and cater more broadly to all segments.
+
+  - title: But what already exists in the market?
+    data:
+      - type: paragraph
+        data: |
+          Although we had a general sense of what we envisioned RetireReady to be, we wanted to investigate similar solutions that already exist in the market. We in turn executed a thorough competitive analysis of financial planning tools put forth by companies like Merrill Lynch, Fidelity, AARP, and Smart Asset.
+
+      - type: spacer
+      - type: spacer
+
+      - type: image
+        data: images/PNC competitive analysis.svg
+
+      - type: caption
+        data: |
+          A rough overview of the major pros and cons of existing financial planning tools and calculators., drawn from a thorough competitive analysis of industry leaders in financial products and services.
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: header
+        data: |
+          Our competitive analysis revealed that there is a significant gap in the market for a tool designed to provide personalized financial planning and insurance advice.
+
+      - type: sub-header
+        data: |
+          More specifically, RetireReady will stand apart in its mission to include healthcare considerations as part of the AI predictive analysis, personalized recommendations related to insurance and ADLS, and collaborative sharing of information to trusted individuals.
+
+  - title: Storyboarding
+    data:
+      - type: paragraph
+        data: |
+          With this positioning statement in mind, we began by developing a series of storyboards to envision how RetireReady might fit into our users' lives.
+
+      - type: sub-header
+        data: |
+          66% of target users we spoke to saw the value in RetireReady and believed that it would be something that they would use to track their financial progress.
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#EDFCF2"
+            data:
+              - type: paragraph
+                data: |
+                  88% of users conveyed that they would trust the results because RetireReady is situated within PNC’s existing ecosystem of tools, and PNC is a reliable brand.
+
+          - type: grid-item
+            color: "#FCEBEB"
+            data:
+              - type: paragraph
+                data: |
+                  33% of users mentioned that they had seen similar tools online, and they didn’t know how this was any different than those tools.
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#EDFCF2"
+            data:
+              - type: paragraph
+                data: |
+                  55% of users mentioned that they would use RetireReady as their primary means of planning for unexpected circumstances.
+
+          - type: grid-item
+            color: "#FCEBEB"
+            data:
+              - type: paragraph
+                data: |
+                  55% of users commented that they would be wary of disclosing too much personal information in the survey.
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#EDFCF2"
+            data:
+              - type: paragraph
+                data: |
+                  44% of users mentioned that they would be interested in PNC’s suggested offerings, and would use those recommendations to invest, or subscribe to different platforms.
+
+          - type: grid-item
+            color: "#FCEBEB"
+            data:
+              - type: paragraph
+                data: |
+                  22% of users stated that they would need to know how the AI is working on the back-end to trust the results.
+
+      - type: spacer
+      - type: spacer
+
+      - type: header
+        data: |
+          Our design needs to make the “blackbox” more transparent and accessible. Moreover, our marketing strategy needs to highlight the differentiating factor between RetireReady and competitors — the consideration of ALL health-related costs.
+
+  - title: Prototyping
+    data:
+      - type: paragraph
+        data: |
+          Based on this feedback as well as that provided by our partners at PNC, we discussed core concepts that are crucial to the design and go-to-market strategy for RetireReady. Accordingly, I designed a number of mid-fidelity prototypes of RetireReady’s landing page, onboarding process, and dashboard design that centered around this main functionality.
+
+      - type: grid
+        data:
+          - type: grid-item
+            data:
+              - type: numbers
+                data: "01"
+
+              - type: sub-header
+                data: Onboarding Survey
+
+              - type: spacer
+
+              - type: paragraph
+                data: Comprehensive information-gathering survey to ensure maximum accuracy of financial projections.
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Optional fields to increase comfort
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Persuasive messaging to encourage survey completion
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Compliance with HIPAA + data security regulations
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Progress bars to provide system status
+
+          - type: grid-item
+            data:
+              - type: image
+                data: images/PNC onboarding.png
+
+      - type: grid
+        data:
+          - type: grid-item
+            data:
+              - type: image
+                data: images/PNC predictive analytics.png
+
+          - type: grid-item
+            data:
+              - type: numbers
+                data: "02"
+
+              - type: sub-header
+                data: Predictive Analytics
+
+              - type: spacer
+
+              - type: paragraph
+                data: Interactive visualization of expected financial trajectory over time (monte-carlo simulations).
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          In-house and external partnership based PNC product recommendations
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Generate revenue through partnerships, investment products, & 1-on-1 advisory services
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Quick, hoverable graph provides overview of trajectory and call to action to learn more
+
+      - type: grid
+        data:
+          - type: grid-item
+            data:
+              - type: numbers
+                data: "03"
+
+              - type: sub-header
+                data: Projection Breakdown
+
+              - type: spacer
+
+              - type: paragraph
+                data: Detailed breakdown of all expected expenses based on insurance policies, and current market trends.
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Call to action with personalized PNC product recommendations
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Transparent overview of the predictive variables involved in the ML output
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Specific focus on health predictions and ADLS service recommendations
+
+          - type: grid-item
+            data:
+              - type: image
+                data: images/PNC projection breakdown.png
+
+      - type: grid
+        data:
+          - type: grid-item
+            data:
+              - type: image
+                data: images/PNC expense tracking.png
+
+          - type: grid-item
+            data:
+              - type: numbers
+                data: "04"
+
+              - type: sub-header
+                data: Expense Tracking
+
+              - type: spacer
+
+              - type: paragraph
+                data: Keep record of general expenses and log unexpected ones to map out new trajectories.
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Dynamic tool that changes in concert with users’ needs
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Utilize multiple permissions to enable collaborative financial planning and information sharing
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Link bank accounts and other documents to consolidate all financial information in a singular hub
+
+  - title: Our recommendation
+    colored: true
+    data:
+      - type: paragraph
+        data: |
+          With deadlines fast approaching, we parallelly developed a robust product strategy for RetireReady. This involved creating a business model canvas, which included estimation of costs, revenue, market size, key partners, and potential risks in the first year of development and launch.
+
+      - type: paragraph
+        data: |
+          Finally, with both a conceptual framework of the product strategy and a concrete vision for the product itself, we forwarded our recommendation to the PNC Experience Design team:
+
+      - type: paragraph
+        data: |
+          RetireReady is a tool that is meant to facilitate financial planning. The main differentiator between RetireReady and competitors is the healthcare considerations that are integrated into the AI calculation of expected expenses and personalized recommendations. While the tool is FREE for end users, the primary means of revenue for PNC is through these recommendations. Specifically, PNC will generate incremental revenue by promoting its own products (PNC Advisory Services and PNC Investments) as well as commissions from partner companies (e.g., ADLS service providers, meal services, etc.). 
+
+      - type: paragraph
+        data: |
+          PNC will work over the next couple of years to test and integrate RetireReady with another similar technology that they have recently developed, Smart Fam. 

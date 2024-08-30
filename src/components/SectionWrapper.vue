@@ -1,5 +1,6 @@
 <template>
-    <div class="section" :style="`background-color: #${color}; padding-top: ${color ? 85 : 0}px; padding-bottom: ${color ? 85 : 0}px`">
+    <div class="section"
+        :style="`background-color: #${color}; padding-top: ${color ? 85 : 0}px; padding-bottom: ${color ? 85 : 0}px`">
         <ImageWrapper class="section-image" v-if="icon" :image="icon" />
         <slot></slot>
     </div>
@@ -10,23 +11,23 @@ import ImageWrapper from './ImageWrapper.vue';
 </script>
 
 <script lang="ts">
-    export default {
-        props: {
-            color: String,
-            icon: String
-        }
+export default {
+    props: {
+        color: String,
+        icon: String
     }
+}
 </script>
 
 <style scoped lang="scss">
 .section {
     position: relative;
-    margin-top: 110px;
+    margin-top: 90px;
 }
 
 .section-image {
     position: absolute;
-    left: calc((100vw - min(1200px, 100vw - 100px)) / 2);
+    left: calc((100vw - min(1000px, 100vw - 100px)) / 2);
     transform: translateY(-50%) translateX(-50%);
     top: 0;
 }

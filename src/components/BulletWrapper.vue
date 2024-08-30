@@ -7,20 +7,20 @@
 </template>
 
 <script lang="ts">
-    export default {
-        props: {
-            data: Array<String>
-        }
+export default {
+    props: {
+        data: Array<String>
     }
+}
 </script>
 
 <style scoped>
 .bullets {
-    padding-left: 70px; 
-    font-size: 18px;
+    padding-left: 20px;
+    font-size: 15px;
 }
 
 .bullets * {
-    line-height: 40px;
+    line-height: 20px;
 }
 </style>

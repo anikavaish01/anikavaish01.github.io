@@ -3,18 +3,18 @@
 </template>
 
 <script lang="ts">
-    export default {
-        props: {
-            content: String,
-        }
+export default {
+    props: {
+        content: String,
     }
+}
 </script>
 
 <style scoped>
-.title {
-  padding-left: 13px;
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 85px;
+.title,
+h1 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 50px;
 }
 </style>

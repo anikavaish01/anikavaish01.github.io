@@ -3,18 +3,18 @@
 </template>
 
 <script lang="ts">
-    export default {
-        props: {
-            content: String,
-            color: String
-        }
+export default {
+    props: {
+        content: String,
+        color: String
     }
+}
 </script>
 
 <style scoped>
 .numbers {
-  font-size: 22px;
-  font-weight: 900;
-  margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 </style>

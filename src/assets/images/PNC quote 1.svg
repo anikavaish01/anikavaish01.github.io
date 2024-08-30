@@ -1,0 +1,18 @@
+<svg width="387" height="161" viewBox="0 0 387 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_492_707)">
+<path d="M9.59764 35.6499C8.80079 34.9425 8.80079 33.699 9.59764 32.9916L16.1133 27.2075L16.1133 41.434L9.59764 35.6499Z" fill="white"/>
+<rect x="16.1133" y="5.86768" width="361.887" height="142.68" rx="10.6699" fill="white"/>
+<text fill="#26293F" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="17.7831" letter-spacing="0em"><tspan x="44.5664" y="45.9316">&#x201c;We are the sandwich generation. </tspan><tspan x="44.5664" y="70.9316">We need to take care of our kids </tspan><tspan x="44.5664" y="95.9316">and our parents at the same </tspan><tspan x="44.5664" y="120.932">time.&#x201d;</tspan></text>
+</g>
+<defs>
+<filter id="filter0_d_492_707" x="0.108434" y="0.532736" width="386.783" height="160.463" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="3.55663"/>
+<feGaussianBlur stdDeviation="4.44578"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.805485 0 0 0 0 0.764154 0 0 0 0 0.725907 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_492_707"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_492_707" result="shape"/>
+</filter>
+</defs>
+</svg>

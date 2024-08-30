@@ -3,19 +3,19 @@
 </template>
 
 <script lang="ts">
-    export default {
-        props: {
-            height: {
-                type: String,
-                default: "55px"
-            },
-        }
+export default {
+    props: {
+        height: {
+            type: String,
+            default: "20px"
+        },
     }
+}
 </script>
 
 <style scoped>
 .spacer {
     width: 100%;
-    height: 55px;
+    height: 20px;
 }
 </style>

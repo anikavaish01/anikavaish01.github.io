@@ -3,17 +3,17 @@
 </template>
 
 <script lang="ts">
-    export default {
-        props: {
-            content: String,
-        }
+export default {
+    props: {
+        content: String,
     }
+}
 </script>
 
 <style scoped>
 caption {
-  font-size: 14px;
-  font-weight: 300;
-  font-style: 'italic';
+    font-size: 12px;
+    font-weight: 300;
+    font-style: 'italic';
 }
 </style>

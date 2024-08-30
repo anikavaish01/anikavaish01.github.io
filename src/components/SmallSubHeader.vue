@@ -3,17 +3,17 @@
 </template>
 
 <script lang="ts">
-    export default {
-        props: {
-            content: String,
-        }
+export default {
+    props: {
+        content: String,
     }
+}
 </script>
 
 <style scoped>
 .small-sub-header {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 </style>

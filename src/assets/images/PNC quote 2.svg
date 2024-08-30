@@ -1,0 +1,18 @@
+<svg width="387" height="112" viewBox="0 0 387 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_492_708)">
+<path d="M9.59764 35.7822C8.80079 35.0748 8.80079 33.8314 9.59764 33.124L16.1133 27.3398L16.1133 41.5663L9.59764 35.7822Z" fill="white"/>
+<rect x="16.1133" y="6" width="361.887" height="92.6795" rx="10.6699" fill="white"/>
+<text fill="#26293F" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="17.7831" letter-spacing="0em"><tspan x="44.5664" y="46.0639"> &#x201c;I&#x2019;m 67, but I don&#x2019;t think of myself </tspan><tspan x="44.5664" y="71.0639">as aging&#x201d;</tspan></text>
+</g>
+<defs>
+<filter id="filter0_d_492_708" x="0.108434" y="0.66506" width="386.783" height="110.463" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="3.55663"/>
+<feGaussianBlur stdDeviation="4.44578"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.805485 0 0 0 0 0.764154 0 0 0 0 0.725907 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_492_708"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_492_708" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -9,49 +9,50 @@
     </div>
 </template>
 
-<script setup  lang="ts">
+<script setup lang="ts">
 import { computed } from 'vue';
 
-    const {content} = defineProps({
-        content: String
-    })
+const { content } = defineProps({
+    content: String
+})
 
-    const parsedContent = computed(() => {
-        if (!content) {
-            return [{type: 'paragraph', data: content}]
-        }
-        const lines = content.split('\n')
-        const ret = []
-        for (const line of lines) {
-            if (line.startsWith('-')) {
-                if (ret[ret.length - 1]?.type === 'bullet') {
-                    (ret[ret.length - 1]?.data as string[]).push(line.replace('-', ''))
-                } else {
-                    ret.push({type: 'bullet', data: [line.replace('-', '')]})
-                }
+const parsedContent = computed(() => {
+    if (!content) {
+        return [{ type: 'paragraph', data: content }]
+    }
+    const lines = content.split('\n')
+    const ret = []
+    for (const line of lines) {
+        if (line.startsWith('-')) {
+            if (ret[ret.length - 1]?.type === 'bullet') {
+                (ret[ret.length - 1]?.data as string[]).push(line.replace('-', ''))
             } else {
-                ret.push({type: 'paragraph', data: line})
+                ret.push({ type: 'bullet', data: [line.replace('-', '')] })
             }
+        } else {
+            ret.push({ type: 'paragraph', data: line })
         }
+    }
 
-        return ret
-    })
+    return ret
+})
 </script>
 
 <style scoped>
 .paragraph {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 35px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 .bullets {
-    padding-left: 70px;
+    padding-left: 20px;
 }
 
-.bullets > * {
-    font-size: 18px;
-    line-height: 40px;
+.bullets>* {
+    font-size: 15px;
+    line-height: 25px;
+    color: #A5A29F
 }
 
 .paragraph-item {

@@ -1,0 +1,18 @@
+<svg width="389" height="163" viewBox="0 0 389 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_491_692)">
+<path d="M10.6579 38.7836C9.78071 38.0049 9.78071 36.6361 10.6579 35.8574L17.8302 29.4902L17.8302 45.1507L10.6579 38.7836Z" fill="white"/>
+<rect x="17.8301" y="6" width="361.17" height="142.595" rx="10.6487" fill="white"/>
+<text fill="#26293F" xml:space="preserve" style="white-space: pre" font-family="Poppins" font-size="17.7479" letter-spacing="0em"><tspan x="46.2266" y="46.0096">&#x201c;I don&#x2019;t know if I have a </tspan><tspan x="46.2266" y="71.0096">smartphone. I can access the </tspan><tspan x="46.2266" y="96.0096">internet, but I don&#x2019;t know how to </tspan><tspan x="46.2266" y="121.01">use the &#x2018;Q-codes.&#x2019; &#x201c;</tspan></text>
+</g>
+<defs>
+<filter id="filter0_d_491_692" x="0.212201" y="0.127321" width="388.576" height="162.17" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="3.91512"/>
+<feGaussianBlur stdDeviation="4.8939"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.805485 0 0 0 0 0.764154 0 0 0 0 0.725907 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_491_692"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_491_692" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -4,256 +4,562 @@ colors:
   accent: "034FE4"
   accent-light: "F2F7FF"
   boxes: "151E2C"
-  subtitle: "395996"
+  subtitle: "000000"
 header:
   title: Smart Loading Zones
-  description: Improving Accessibility Outcomes in Transportation Services Across Pittsburgh, PA 
+  description: Improving Accessibility Outcomes in Transportation Services Across Pittsburgh, PA
   image: images/Frame31.svg
-sections: 
-  - title: Overview 
+sections:
+  - title: Overview
     data:
-      - type: paragraph
-        data: | 
-            Smart Loading Zones (SLZs) are a recent city-wide initiative meant to allow delivery drivers safe use of
-            curb
-            space for loading, limit traffic congestion, and reduce carbon emissions produced by idling cars in
-            Pittsburgh,
-            PA.
-            
-
-            With a soft launch in mid-2023, SLZs have been met with largely negative and critical reception from native
-            Pittsburghers. Over several months, our team was challenged to evaluate the current state, understand user
-            pain
-            points, identify high-priority areas of improvement, and propose solutions to better the overall user
-            experience
-            of SLZs.
-
-      - type: image
-        data: "images/Group 268.svg"
       - type: grid
         data:
           - type: grid-item
-            color: "#7B6251"
-            text-color: white
             data:
-              - type: subtitle
+              - type: sub-header
                 data: Role
-                
+
               - type: paragraph
                 data: UX Researcher & Designer
 
           - type: grid-item
-            color: "#B2A49A"
             data:
-              - type: subtitle
+              - type: sub-header
                 data: Client
-                
+
               - type: paragraph
                 data: City of Pittsburgh
 
           - type: grid-item
-            color: "#7B6251"
             data:
-              - type: subtitle
+              - type: sub-header
                 data: Project Timeline
-                
+
               - type: paragraph
                 data: Aug 2023 - Dec 2023
 
           - type: grid-item
-            color: "#B2A49A"
             data:
-              - type: subtitle
-                data: Teammates
-                
-              - type: paragraph
-                data: |
-                      Erin Sawyer
-                      Gaurav Nemade
-                      Justine Chou
-
-      - type: grid
-        color: blue
-        data:
-          - type: grid-item
-            text-color: white
-            data:
-              - type: numbers
-                data: 01
-                
               - type: sub-header
-                data: Knowledge v. Desire
+                data: Teammates
 
               - type: paragraph
                 data: |
-                  Adult children have a high willingness to support their aging parents but low awareness of how to help, pinpointing a critical area for educational interventions.
- 
-          - type: grid-item
-            data:
-              - type: image
-                data: images/soemthing.png
-                
-              - type: caption
-                data: |
-                  Questions were coded with whether they measure “willingness” or “awareness.” Averages were computed based on responses given on a 5-point Likert scale.
+                  3 Product Designers
 
-
-      - type: subtitle
+      - type: sub-header
         data: Methods
 
       - type: grid
-        data: 
+        data:
           - type: grid-item
-            data: 
-              - type: subsubtitle
+            data:
+              - type: small-sub-header
                 data: Research
-              
+
               - type: paragraph
-                data: "Directed Storytelling / User Interviews / Contextual Inquiry / Ethnographic Research / Personas / Heuristic Evaluation / Affinity Diagramming / Empathy Mapping / Think-Aloud Protocol / Speed Dating / Storyboarding"
+                data: User Interviews / Guerrilla Research / Contextual Inquiry / Ethnographic Research / Personas / Heuristic Evaluation / Affinity Diagramming / Empathy Mapping / Think-Aloud Protocol / Speed Dating
 
           - type: grid-item
-            data: 
-              - type: subsubtitle
+            data:
+              - type: small-sub-header
                 data: Design
 
               - type: paragraph
-                data: Figma / Usability Testing
+                data: Storyboarding / Crazy 8’s / Wireframing / Usability Testing
 
   - title: Context
-    colored: true
-    icon: bulb
     data:
       - type: paragraph
-        data: | 
-          Designated by purple curbs, SLZs employ innovative camera technology to read license plates and analyze
-          real-time curbside activity, automating payment for the time a vehicle spends at a purple curb. Registered
-          users are billed by the minute for the exact time spent in the zone. Registration is a one-time process,
-          wherein users access an online web application by scanning a QR-code on the sign.
+        data: |
+          Smart Loading Zones (SLZs) are a government-sponsored initiative meant to provide delivery drivers with safe curb space, reduce traffic congestion, and lower emissions from idling cars in Pittsburgh, PA.
 
-  - title: Defining The Problem Space
-    data:
+      - type: header
+        data: |
+          With a soft launch in mid-2023, SLZs have been met with largely negative and critical reception from native Pittsburghers.
+
+      - type: sub-header
+        data: Meet Vishal.
+
       - type: paragraph
-        data: Our team utilized abstraction laddering to define the problem space. By analyzing various components of SLZs at various levels of abstraction from the concrete “how” to the abstract “why,” we realized that a number of our concerns centered around accessibility.
-      
+        data: |
+          Vishal is a 34 year-old marketing manager at a medium-size startup in Pittsburgh, PA. He’s been a long-time resident of the city, completing both his Bachelor’s and Master’s degree at the University of Pittsburgh. In 2012, Vishal sadly met with a car accident that left him moderately paralyzed from the waist down. Despite his circumstances, Vishal is labeled by his doctors as “high-functioning,” which means that he is able to move about his day quite independently: he drives, shops, exercises, and works without any additional assistance aside from his super dope wheelchair wheels.
+
+      - type: spacer
+
       - type: image
-        data: images/soemthing.png
+        data: images/car crash.png
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
 
       - type: paragraph
-        data: "Particularly passionate about this space, we honed in on the following problem statement:" 
-      
-      - type: important
-        title: How might we...
-        data: 
-          - type: image
-            data: question
+        data: |
+          Recently, Vishal has noticed some purple curbs near some of his favorite eateries and the local shops he frequents. They have a sign nearby that tell him that these are “Smart Loading Zones,” that a person needs to register before using them, and that they utilize graduated pay-by-minute parking... WHAT!?
 
-          - type: callout
-            data: Make SLZs more accessible and equitable for drivers with disabilities, expanding their benefits to more community members?
+      - type: paragraph
+        data: |
+          He has no idea what these are and assumes that he can’t use the spots anymore. Now, Vishal is extremely frustrated that he needs to park nearly a block away and struggle to wheel-up the broken Pittsburgh sidewalks to pick up dinner. He’s desperately missing the days of storefront parking.
 
-          - type: spacer
+      - type: image
+        data: images/SLZ sign.png
 
-          - type: subsubtitle
-            data: Why does this problem matter?
+      - type: spacer
+      - type: spacer
 
-          - type: callout
-            data: Parking is a key factor contributing to community and economic engagement, particularly with local businesses. As we consider solutions to issues with parking and loading, inclusiveness is critical. Accessibility should be at the forefront of this initiative, not an afterthought.
+      - type: sub-header
+        data: |
+          But Vishal is not alone. Despite their goal to serve all Pittsburgh residents, our team found a major gap: disabled drivers are not part of the conversation at all.
 
-  - title: Research
+  - title: With this in mind
     data:
-      - type: numbers
-        data: "01"
+      - type: header
+        data: |
+          How might we make SLZs more accessible and equitable for drivers with disabilities, expanding their benefits to more community members?
 
-      - type: subtitle
-        data: Whitepaper Research
+  - icon: bulb
+    title: Wait, but how do SLZ's work?
+    colored: true
+    data:
+      - type: sub-header
+        data: |
+          Designated by purple curbs, SLZs employ innovative camera technology to read license plates and analyze real-time curbside activity, automating payment for the time a vehicle spends at a purple curb. Registered users are billed by the minute for the exact time spent in the zone. Registration is a one-time process, wherein users access an online web application by scanning a QR-code on the sign.
+
+  - title: Secondary Research
+    data:
+      - type: header
+        data: |
+          I conducted comprehensive desk research and discovered a growing confusion and unease surrounding the SLZ initiative.
 
       - type: paragraph
-        data: Referencing press releases issued by the city government, the official SLZ pamphlet put forth by the Pittsburgh parking authority, and other newspaper and social media material, I conducted comprehensive white paper research. I was particularly interested in investigating both the nitty-gritty specifics of the program infrastructure as well as the general public’s sentiment towards it. My research served to highlight the growing confusion and unease surrounding the entire initiative.
+        data: |
+          Referencing press releases issued by the city government, the official SLZ pamphlet put forth by the Pittsburgh parking authority, and other newspaper and social media material, I investigated both the nitty-gritty specifics of the program infrastructure as well as the general public’s sentiment towards it.
+
+      - type: paragraph
+        data: |
+          These materials served to expose the government’s half-baked plan; specifically, I came across 20+ Reddit threads with unanswered civilian questions, critical (bordering on caustic) articles from local news outlets, no definite payment structure or enforcement specification, and most problematic -- a severe lack of clarity surrounding rules and regulations.
+
+      - type: spacer
+
+      - type: image
+        data: images/SLZ reddit post.png
+
+      - type: caption
+        data: |
+          A Reddit post I found during a social media review, highlighting the growing confusion and unease surrounding SLZs.
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: sub-header
+        data: |
+          After a grueling round of hide-and-seek, I concluded that there is no easily discoverable policy or measure that accommodates people like Vishal, either time-wise or monetarily, when using SLZs. This could be due to a lack of clarity or a direct violation of the Americans with Disabilities Act.
+
+  - title: Ethnographic research
+    data:
+      - type: header
+        data: |
+          To better empathize with users, I engaged in experiential research, bodystorming the process of parking and registering at an SLZ. I observed massive downtimes and critical issues with the web application.
+
+      - type: spacer
+
+      - type: image
+        data: images/SLZ bodystorming.png
+
+      - type: caption
+        data: |
+          Pictures of two SLZ locations I visited to bodystorm the experience and observe others.
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: sub-header
+        data: |
+          Just like Vishal, people avoid parking along purple curbsides. This breeds inefficiency because the designated zone is underutilized during downtimes. This also poses economic challenges for storefronts, as previously utilized customer parking spots go vacant, reducing potential transactions and profits.
+
+  - title: Heuristic Evaluation
+    data:
+      - type: header
+        data: |
+          From the physical signage to the web application, I experienced a great deal of friction. Specifically, there were gaps in the information made available to users, confusing verbiage, and inconsistencies in policy.
+
+      - type: paragraph
+        data: |
+          Because the Pittsburgh Parking Authority is launching a MVP, the user flow of the registration process is largely untested. Accordingly, my team and I saw the value in individually carrying out a heuristic evaluation of the interface. We then collapsed our individual findings, and prioritized the main violations that most critically impacted usability.
+
+      - type: image
+        data: images/SLZ heuristic evaluation.png
+
+      - type: caption
+        data: |
+          A few examples of violations within the web application (left) and with the physical sign (right).
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: sub-header
+        data: |
+          The web application violates several of Jakob Nielsen’s heuristics, with the primary usability issues revolving around "help and documentation" and "match between system and the real world." Specifically, there is a lack of resources and poorly defined payment and parking metrics.
+
+  - title: User Interviews
+    data:
+      - type: header
+        data: |
+          Reaching out to a vulnerable population is always tricky. Through multiple recruitment mediums, my team and I were able to speak to 5 disabled drivers. These drivers conveyed a limited knowledge, general distrust, and severe frustration/ concern with SLZs.
+
+      - type: paragraph
+        data: |
+          Up until this point, my preliminary research hadn’t surfaced any specific sentiments regarding accessibility. To learn more about the disabled driver experience, we subsequently carried out 5 interviews with disabled drivers, operationalizing “disability” as individuals with permanent disabilities, temporary physical disabilities, and of older age (65+).
+
+      - type: paragraph
+        data: |
+          The objectives of the interviews were twofold. Firstly, we aimed to gain a comprehensive understanding of the accessibility of the SLZs, how individuals with various types of disabilities engage with them, and the specific situations in which they make use of these zones. Secondly, we sought to identify the challenges and difficulties encountered by these individuals, while also comparing their experiences with those in other parking zones across the city. I drafted the following testing and analysis plan.
+
+      - type: spacer
+
+      - type: image
+        data: images/SLZ interviews.svg
+
+      - type: caption
+        data: |
+          I developed a comprehensive testing and analysis plan. This served as the basis for our interview guide, shaping the kinds of questions we asked, and the responses we aimed to get.
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: paragraph
+        data: |
+          Our interviews revealed a wealth of findings, from which we synthesized the following four primary insights:
+
+      - type: spacer
 
       - type: grid
-        data: 
+        data:
           - type: grid-item
-            data: 
-              - type: subsubtitle
-                data: Main Insight
+            color: "#FAFAFA"
+            data:
+              - type: numbers
+                data: "01"
 
-              - type: emphasis
-                data: There exists no policy or measure that accommodates people with disabilities time-wise or monetarily when using SLZs. Either this is an issue of lack of clarity or this is a violation of the Americans with Disabilities Act.
+              - type: sub-header
+                data: |
+                  The realized design of SLZs is not currently accessible for individuals with physical disabilities.
 
-          - type: grid-item
-            data: 
+              - type: paragraph
+                data: |
+                  - The signage does not explicitly indicate whether the parking spot is an accessible spot.
+                  - Signs are placed at a height that can be difficult for people in wheelchairs or with limited arm mobility to reach to scan the QR-code registration.
+                  - Individuals with colorblindness have difficulty distinguishing the purple curbs from any other curb.
+
               - type: image
-                data: images/image15.png
-
-      - type: spacer
-      - type: spacer
-      - type: spacer
-
-      - type: numbers
-        data: "02"
-
-      - type: subtitle
-        data: Experiential Research
-
-      - type: paragraph
-        data: While white paper research served to solidify my understanding of the problem, I wanted to better empathize with users. I consequently engaged in some experiential research, where I first bodystormed through the process of parking in an SLZ and registering for the program myself. I subsequently conducted ethnographic research, spending time observing zones in multiple locations and people’s interactions with them.
-
-      - type: grid
-        data: 
-          - type: grid-item
-            data: 
-              - type: subsubtitle
-                data: Main Insight
-
-              - type: emphasis
-                data: People avoid parking along purple curbsides, and only utilize them when there is absolutely no other available space. This breeds inefficiency because the designated zone is underutilized during downtimes.
+                data: images/SLZ quote 1.svg
 
           - type: grid-item
-            data: 
+            color: "#FAFAFA"
+            data:
+              - type: numbers
+                data: "02"
+
+              - type: sub-header
+                data: |
+                  SLZs effectively eliminate prime parking spaces for drivers with disabilities and reduce the number of potential customers for small businesses.
+
+              - type: paragraph
+                data: |
+                  - Due to their proximity to storefronts, SLZs could improve accessibility for those needing to minimize walking distance to their destinations (our very own Vishal).
+                  - Local business owners believe that SLZs actually reduce opportunities for disabled customers to serve as patrons.
+
               - type: image
-                data: images/image15.png
-
-      - type: spacer
-      - type: spacer
-      - type: spacer
-
-      - type: numbers
-        data: "04"
-
-      - type: subtitle
-        data: User Interviews
-
-      - type: paragraph
-        data: While white paper research served to solidify my understanding of the problem, I wanted to better empathize with users. I consequently engaged in some experiential research, where I first bodystormed through the process of parking in an SLZ and registering for the program myself. I subsequently conducted ethnographic research, spending time observing zones in multiple locations and people’s interactions with them.
+                data: images/SLZ quote 2.svg
 
       - type: grid
-        data: 
+        data:
           - type: grid-item
-            data: 
-              - type: subsubtitle
-                data: Lack of Awareness
+            color: "#FAFAFA"
+            data:
+              - type: numbers
+                data: "03"
 
-              - type: quote
-                data: Is there leniency for disabled drivers and passengers ... or will I have to pay more because of my disability?
+              - type: sub-header
+                data: |
+                  People with disabilities expect and deserve leniency and accommodations.
 
-              - type: emphasis
-                data: Drivers with disabilities are unaware if they can utilize SLZs due to lack of clarity surrounding available accommodations. 
+              - type: paragraph
+                data: |
+                  - The pay-by-minute parking and no existing policy to afford payment leniency unfairly target those with disabilities who generally take longer to unload.
+                  - Disabled drivers (an often already financially strained population) may unnecessarily harm themselves while trying to minimize cost.
+
+              - type: image
+                data: images/SLZ quote 3.svg
 
           - type: grid-item
-            data: 
-              - type: subsubtitle
-                data: Missed Opportunities
+            color: "#FAFAFA"
+            data:
+              - type: numbers
+                data: "04"
 
-              - type: quote
-                data: Is there leniency for disabled drivers and passengers ... or will I have to pay more because of my disability?
+              - type: sub-header
+                data: |
+                  People with disabilities have varying needs and skill levels when it comes to navigating technology.
 
-              - type: emphasis
-                data: Drivers with disabilities are unaware if they can utilize SLZs due to lack of clarity surrounding available accommodations. 
+              - type: paragraph
+                data: |
+                  - Some drivers indicated that digital, or more automated, solutions would afford interactions with the space without additional physical stress.
+                  - Others, specifically older adults, mentioned that operating technology poses an additional barrier.
 
+              - type: image
+                data: images/SLZ quote 4.svg
   - title: Ideation
-    data: 
+    data:
+      - type: header
+        data: |
+          Using these insights, we did multiple rounds of Crazy 8’s, focusing on key touchpoints for improving accessibility, including payment methods, registration processes, physical design, policy awareness, and tech literacy.
+
+      - type: spacer
+
+      - type: image
+        data: images/SLZ crazy 8.png
+
+      - type: caption
+        data: |
+          A snapshot of one round of Crazy 8’s experimenting with ideas like an automated ramp, an informational pamphlet, a revised payment structure, and more.
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
       - type: paragraph
-        data: | 
-          henlo
-          
-          - hollo
-          - bye
+        data: |
+          Using our Crazy 8’s as inspiration, we drafted a number of storyboards illustrating ideas such as incorporating conventional forms of payment (like parking meters), adjusting sign heights, linking license plates with bank accounts, automatic adjustment of parking rates, doctor-issued disability verification stickers, and many others.
+
+  - title: Storyboarding
+    colored: true
+    data:
+      - type: header
+        data: |
+          We carefully crafted our storyboards: each addressed a specific user need, posed a question for speed dating, and was part of a set of three that escalated in "psychological riskiness." This approach meant to assess comfort levels with different solutions.
+
+      - type: image
+        data: images/SLZ storyboarding process.svg
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: image
+        data: images/SLZ storyboard.svg
+
+      - type: spacer
+
+      - type: caption
+        data: |
+          An example of a storyboard illustrating a low psychological risk solution to address the user need identified above.
+
+  - title: Honing in on design opportunities
+    data:
+      - type: sub-header
+        data: |
+          Speed dating revealed that users preferred solutions that offered payment leniency, automatically adjusted rates based on disability status, utilized familiar payment methods, and offered more context and information about how to use SLZs. Accordingly, we proposed the following 3 design solutions:
+
+      - type: spacer
+      - type: spacer
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#395996"
+            data:
+              - type: paragraph
+                color: "#ffffff"
+                data: |
+                  A signage redesign with information split across 2 signs to convey more clearly how SLZs work.
+
+          - type: grid-item
+            color: "#92A5CB"
+            data:
+              - type: paragraph
+                color: "#ffffff"
+                data: |
+                  An onboarding process that is meant to introduce individuals to the initiative.
+
+          - type: grid-item
+            color: "#395996"
+            data:
+              - type: paragraph
+                color: "#ffffff"
+                data: |
+                  An application for disability accommodations nestled within the existing registration process.
+
+  - title: Testing
+    data:
+      - type: header
+        data: |
+          We conducted intercept testing with lo-fi prototypes, and learned that participants found the two signs helpful, but overwhelming and wanted to skip the onboarding altogether. Participants most appreciated applying for rate accommodations.
+
+      - type: paragraph
+        data: |
+          To ensure standardization across usability testing, we identified three primary tasks to test, and defined goals and success metrics for each.
+
+      - type: spacer
+      - type: spacer
+
+      - type: image
+        data: images/SLZ usability testing goals.svg
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: image
+        data: images/SLZ prototype testing.svg
+
+      - type: caption
+        data: |
+          Intercept testing & guerrilla research with a prototype of two signs (left) and of an onboarding process (middle). A paper prototype of a potential flow for applying for disability accommodations within the web application (right).
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#EDFCF2"
+            data:
+              - type: paragraph
+                data: |
+                  On the sign, 67% of users found the separation of sections useful in teasing apart different facets of the SLZ implementation.
+
+          - type: grid-item
+            color: "#FCEBEB"
+            data:
+              - type: paragraph
+                data: |
+                  Participants expressed confusion around the two signs. Drivers must prioritize their attention and would likely only be able to focus on one sign when deciding to park.
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#EDFCF2"
+            data:
+              - type: paragraph
+                data: |
+                  Users appreciated the illustrations on the onboarding screens, commenting that they felt “welcomed,” that there was “good contrast,” and that they “easily understood how the process works.”
+
+          - type: grid-item
+            color: "#FCEBEB"
+            data:
+              - type: paragraph
+                data: |
+                  78% of users mentioned that they would skip the onboarding process altogether.
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#EDFCF2"
+            data:
+              - type: paragraph
+                data: |
+                  All users successfully completed the application process for disability accommodations within the Automotus app.
+
+          - type: grid-item
+            color:
+            data:
+              - type: paragraph
+                data:
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#EDFCF2"
+            data:
+              - type: paragraph
+                data: |
+                  Participants conveyed that the user flow of the registration process was intuitive and easy to understand.
+          - type: grid-item
+            data:
+              - type: paragraph
+                data:
+
+      - type: spacer
+      - type: spacer
+
+      - type: header
+        data: |
+          Synthesizing across our quantitative and qualitative analysis, we decided to prioritize what users overwhelmingly found the most necessary and useful: the application for disability accommodations.
+
+      - type: grid
+        data:
+          - type: grid-item
+            data:
+              - type: numbers
+                data: "01"
+
+              - type: sub-header
+                data: "Application For Accommodations"
+
+              - type: spacer
+
+              - type: paragraph
+                data: A short application to verify disability status and automatically receive rate accommodations.
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Nestled within the registration process for easy access
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Options to either scan or enter handicap number to cater to users’ preferences + comfort with newer technology.
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Compliance with ADA guidelines
+
+              - type: grid
+                data:
+                  - type: grid-item
+                    color: "#FAFAFA"
+                    data:
+                      - type: graphic-text
+                        data: |
+                          Scanning technology for quick verification
+
+          - type: grid-item
+            data:
+              - type: image
+                data: images/SLZ disability application prototype.png
+
+  - title: Our recommendation
+    colored: true
+    data:
+      - type: paragraph
+        data: |
+          We presented our final recommendation to folks at the City of Pittsburgh Parking Authority. Specifically, to streamline the experience of users with disabilities, we proposed  integrating a short user flow that occurs at the end of the registration process and allows drivers with disabilities the opportunity to apply for financial and time accommodations by scanning or inputting their handicap placard identification number into the system.
+
+      - type: paragraph
+        data: |
+          If approved, this feature automatically applies a reduced rate for users with disabilities, reducing the urge to rush and potentially harm an already vulnerable body.
+
+      - type: paragraph
+        data: |
+          Our proposed solution is extremely practical due to its necessity and urgency. We recommend leveraging existing accommodative systems like handicap placards to improve accessibility rather than introducing something new. In such a way, we aim to optimize ease of implementation, while greatly improving accessibility for SLZ users.

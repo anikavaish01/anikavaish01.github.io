@@ -3,17 +3,17 @@
 </template>
 
 <script lang="ts">
-    export default {
-        props: {
-            content: String
-        }
+export default {
+    props: {
+        content: String
     }
+}
 </script>
 
 <style scoped>
 .subtitle {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 </style>
