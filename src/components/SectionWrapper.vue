@@ -1,6 +1,6 @@
 <template>
     <div class="section"
-        :style="`background-color: #${color}; padding-top: ${color ? 85 : 0}px; padding-bottom: ${color ? 85 : 0}px`">
+        :style="`background-color: ${color}; padding-top: ${color ? 85 : 0}px; padding-bottom: ${color ? 85 : 0}px`">
         <ImageWrapper class="section-image" v-if="icon" :image="icon" />
         <slot></slot>
     </div>
@@ -19,7 +19,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .section {
     position: relative;
     margin-top: 90px;
@@ -30,5 +30,11 @@ export default {
     left: calc((100vw - min(1000px, 100vw - 100px)) / 2);
     transform: translateY(-50%) translateX(-50%);
     top: 0;
+}
+</style>
+
+<style>
+.section:first-child  {
+  margin-top: 0px !important;
 }
 </style>

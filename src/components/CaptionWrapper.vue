@@ -11,9 +11,10 @@ export default {
 </script>
 
 <style scoped>
-caption {
+.caption {
     font-size: 12px;
     font-weight: 300;
-    font-style: 'italic';
+    font-style: italic;
+    margin-top: 15px;
 }
 </style>

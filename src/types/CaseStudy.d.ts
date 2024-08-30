@@ -24,6 +24,8 @@ interface Section {
 
 interface Daum {
     type: string
+    padding?: boolean
+    caption?: String
     data: Daum[] | string | string[]
     colored?: boolean
     color?: string

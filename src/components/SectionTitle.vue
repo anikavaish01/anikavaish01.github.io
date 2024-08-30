@@ -13,7 +13,7 @@ export default {
 
 <style scoped lang="scss">
 .section-header {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
     margin-bottom: 20px;
     text-transform: uppercase;

@@ -10,8 +10,8 @@
 
     <div class="content">
       <SectionWrapper v-for="items in caseStudy.sections" :key="items.title"
-        :color="items.colored ? caseStudy.colors['accent-light'] : undefined" :icon="items.icon">
-        <SectionTitle :color="caseStudy.colors.accent" :content="items.title" />
+        :color="items.colored ? '#' + caseStudy.colors['accent-light'] : items.color" :icon="items.icon">
+        <SectionTitle v-if="items.title" :color="caseStudy.colors.accent" :content="items.title" />
         <div class="section-content">
           <DynamicComponent :items="items.data" :colors="caseStudy.colors" />
         </div>
@@ -78,8 +78,6 @@ const imageUrl = computed(() => {
   width: 60%;
   color: white;
 }
-
-.section {}
 
 .section-content {
   max-width: min(1000px, 100vw - 50px);

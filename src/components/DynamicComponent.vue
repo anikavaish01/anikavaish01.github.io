@@ -3,9 +3,9 @@
         <div v-for="(data, index) in data" :key="`${data.type}-${index}`">
             <ParagraphWrapper v-if="data.type === 'paragraph'" :content="(data.data as string)" />
             <SubHeaderWrapper v-else-if="data.type === 'sub-header'" :content="(data.data as string)" />
-            <GridWrapper v-else-if="data.type === 'grid'" :data="(data.data as Daum[])" :colors="colors"
+            <GridWrapper v-else-if="data.type === 'grid'" :data="(data.data as Daum[])" :colors="colors" :padding="data.padding ?? true"
                 :color="data.color" />
-            <ImageWrapper v-else-if="data.type === 'image'" :image="(data.data as string)" :colors="colors" />
+            <ImageWrapper v-else-if="data.type === 'image'" :image="(data.data as string)" :colors="colors" :caption="data.caption" />
             <NumbersWrapper v-else-if="data.type === 'numbers'" :content="(data.data as string)"
                 :color="colors.accent" />
             <EmphasisWrapper v-else-if="data.type === 'emphasis'" :content="(data.data as string)" />
@@ -14,7 +14,6 @@
             <GraphicText v-else-if="data.type === 'graphic-text'" :content="(data.data as string)"
                 :colored="(data.colored as boolean)" />
             <HeaderWrapper v-else-if="data.type === 'header'" :content="(data.data as string)" />
-            <CaptionWrapper v-else-if="data.type === 'caption'" :content="(data.data as string)" />
             <SmallSubHeader v-else-if="data.type === 'small-sub-header'" :content="(data.data as string)" />
         </div>
     </div>
@@ -23,7 +22,7 @@
 <script setup lang="ts">
 import ParagraphWrapper from '@/components/ParagraphWrapper.vue'
 import GridWrapper from '@/components/GridWrapper.vue'
-import FooterWrapper from '@components/FooterWrapper.vue'
+import FooterWrapper from '@/components/FooterWrapper.vue'
 import SubHeaderWrapper from '@/components/SubheaderWrapper.vue'
 import ImageWrapper from '@/components/ImageWrapper.vue'
 import EmphasisWrapper from '@/components/EmphasisWrapper.vue'
