@@ -11,12 +11,13 @@ header:
   image: images/Frame31.svg
 sections:
   - title: Overview
-    color: blue
+    color: "#395996"
     data:
       - type: grid
         padding: false
         data:
           - type: grid-item
+            text-color: "#ffffff"
             data:
               - type: sub-header
                 data: Role
@@ -25,6 +26,7 @@ sections:
                 data: UX Researcher & Designer
 
           - type: grid-item
+            text-color: "#ffffff"
             data:
               - type: sub-header
                 data: Client
@@ -33,6 +35,7 @@ sections:
                 data: City of Pittsburgh
 
           - type: grid-item
+            text-color: "#ffffff"
             data:
               - type: sub-header
                 data: Project Timeline
@@ -41,6 +44,7 @@ sections:
                 data: Aug 2023 - Dec 2023
 
           - type: grid-item
+            text-color: "#ffffff"
             data:
               - type: sub-header
                 data: Teammates
@@ -55,6 +59,7 @@ sections:
         padding: false
         data:
           - type: grid-item
+            text-color: "#ffffff"
             data:
               - type: small-sub-header
                 data: Research
@@ -63,6 +68,7 @@ sections:
                 data: User Interviews / Guerrilla Research / Contextual Inquiry / Ethnographic Research / Personas / Heuristic Evaluation / Affinity Diagramming / Empathy Mapping / Think-Aloud Protocol / Speed Dating
 
           - type: grid-item
+            text-color: "#ffffff"
             data:
               - type: small-sub-header
                 data: Design
@@ -297,6 +303,7 @@ sections:
 
               - type: image
                 data: images/SLZ quote 4.svg
+
   - title: Ideation
     data:
       - type: header
@@ -467,53 +474,20 @@ sections:
               - type: numbers
                 data: "01"
 
-              - type: sub-header
-                data: "Application For Accommodations"
-
-              - type: spacer
-
               - type: paragraph
                 data: A short application to verify disability status and automatically receive rate accommodations.
 
-              - type: grid
-                data:
-                  - type: grid-item
-                    color: "#FAFAFA"
-                    data:
-                      - type: graphic-text
-                        data: |
-                          Nestled within the registration process for easy access
+              - type: spacer
+              - type: spacer
 
-              - type: grid
-                data:
-                  - type: grid-item
-                    color: "#FAFAFA"
-                    data:
-                      - type: graphic-text
-                        data: |
-                          Options to either scan or enter handicap number to cater to users’ preferences + comfort with newer technology.
-
-              - type: grid
-                data:
-                  - type: grid-item
-                    color: "#FAFAFA"
-                    data:
-                      - type: graphic-text
-                        data: |
-                          Compliance with ADA guidelines
-
-              - type: grid
-                data:
-                  - type: grid-item
-                    color: "#FAFAFA"
-                    data:
-                      - type: graphic-text
-                        data: |
-                          Scanning technology for quick verification
+              - type: sub-header
+                data: Expand user base by ~2.6M users in Pittsburgh, PA. Ensure automatic compliance with federal ADA regulations.
 
           - type: grid-item
             data:
               - type: image
+                caption: |
+                  Integrated into the registration process, the accommodation application provides users with multiple options to verify disability status, ensuring quick approval. The backend operates through a straightforward database search and matching system.
                 data: images/SLZ disability application prototype.png
 
   - title: Our recommendation
@@ -523,8 +497,8 @@ sections:
         data: |
           We presented our final recommendation to folks at the City of Pittsburgh Parking Authority. Specifically, to streamline the experience of users with disabilities, we proposed  integrating a short user flow that occurs at the end of the registration process and allows drivers with disabilities the opportunity to apply for financial and time accommodations by scanning or inputting their handicap placard identification number into the system.
 
-          
+
           If approved, this feature automatically applies a reduced rate for users with disabilities, reducing the urge to rush and potentially harm an already vulnerable body.
 
-          
+
           Our proposed solution is extremely practical due to its necessity and urgency. We recommend leveraging existing accommodative systems like handicap placards to improve accessibility rather than introducing something new. In such a way, we aim to optimize ease of implementation, while greatly improving accessibility for SLZ users.

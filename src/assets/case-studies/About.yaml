@@ -1,0 +1,112 @@
+title: About
+url: About
+colors:
+  accent: "FFB21C"
+  accent-light: "FFECE0"
+  boxes: "151E2C"
+  subtitle: "000000"
+header:
+  title: Thanks for being here
+  description: There’s so many stories yet to tell. Let’s tell them together!
+  image:
+sections:
+  - title:
+    color: "#FFB21C"
+    data:
+      - type: grid
+        padding: false
+        data:
+          - type: grid-item
+            data:
+              - type: image
+                data: images/About anika and mom.png
+
+          - type: grid-item
+            data:
+              - type: image
+                data: images/About mylo.png
+
+          - type: grid-item
+            data:
+              - type: image
+                data: images/About anika and mihir.png
+
+  - title: Hi, nice to meet you!
+    data:
+      - type: header
+        data: |
+          A puzzle and word-game enthusiast, I’m a critical thinker, a problem-solver, a team player. And yes, I’m always up for a round of Wordle.
+
+      - type: sub-header
+        data: Meet me.
+
+      - type: paragraph
+        data: |
+          I’m Anika, and while I am officially a UX Researcher, I prefer to think of myself as a life-long learner. I recently earned my Master’s Degree in Human-Computer Interaction from Carnegie Mellon University, where I spent 8 months collaborating on a client project with Princeton University’s Research Computing Services team to curate the front-end of a research data management tool. I also had the opportunity to work alongside the PNC Experience Design Team to design for complex financial and familial interactions, as well as UPMC physicians / data scientists to create an accessible ML data modeling platform. Prior to my time at CMU, I worked as a researcher at UCLA for 2 years, probing the underpinnings of Parkinson’s disease in the Bitan Lab and exploring the subtleties of human perception in the Computational Vision and Learning Lab.
+
+      - type: paragraph
+        data: |
+          All these experiences in concert have served to solidify my passion for research, data, and piecing puzzles together. Now, as I venture into industry, I am excited to put my technical background in cognitive psychology, programming, and academic research to use in real-world applications. But more than that, I am eager to understand humans better, and center their thoughts, feelings, and stories in digital design.
+
+      - type: header
+        data: |
+          Storytelling is my passion, data is my guiding pillar, words are my medium, and people are at the heart of everything I do.
+
+      - type: spacer
+      - type: spacer
+
+      - type: image
+        data: images/About heart.png
+
+      - type: spacer
+      - type: spacer
+      - type: spacer
+      - type: spacer
+      - type: spacer
+
+      - type: sub-header
+        data: My favorite research method...
+
+      - type: spacer
+
+      - type: header
+        data: |
+          It’s a tie! I love the nuance and thoughtfulness required to write the most perfect survey question (it’s truly an art), but I also find nothing more thrilling than collaborating with end-users face-to-face in a fruitful co-design session.
+
+      - type: spacer
+
+      - type: sub-header
+        data: Some other favorites of mine...
+
+      - type: spacer
+      - type: spacer
+
+      - type: grid
+        data:
+          - type: grid-item
+            color: "#FFB21C"
+            text-color: "#ffffff"
+            data:
+              - type: paragraph
+                data: My favorite activity is hiking with my sweet pup, Mylo!
+
+          - type: grid-item
+            color: "#545454"
+            text-color: "#ffffff"
+            data:
+              - type: paragraph
+                data: My favorite person on this entire planet is my mom, who inspires me endlessly and is the absolute best puzzle-partner.
+
+          - type: grid-item
+            color: "#FFB21C"
+            text-color: "#ffffff"
+            data:
+              - type: paragraph
+                data: My favorite season in spring, because who doesn’t love cozy rainy days, fresh greenery, and the smell of sun-soaked flowers.
+
+          - type: grid-item
+            color: "#545454"
+            text-color: "#ffffff"
+            data:
+              - type: paragraph
+                data: My favorite Ben & Jerry’s ice cream flavor is Chubby Hubby... an exquisite blend of salty and sweet and crunchy.
