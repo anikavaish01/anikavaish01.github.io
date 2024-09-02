@@ -1,11 +1,16 @@
 <template>
   <div class="case-study-main">
-    <div class="title-image-wrapper" :style="`background-color: #${caseStudy.colors.boxes};`">
-      <div class="title-text-wrapper">
-        <div class="title-text">{{ caseStudy.header.title }}</div>
-        <div class="title-description">{{ caseStudy.header.description }}</div>
+    <div class="title-box" :style="`background-color: ${caseStudy.header.color}`" >
+      <div class="title-content-wrapper">
+        <div class="title-text-wrapper">
+          <div class="title-text">{{ caseStudy.header.title }}</div>
+          <div class="title-subtext">
+            <div class="title-product-name">{{ caseStudy.header['product-name']}}</div> 
+            <div class="title-description">{{ caseStudy.header.description }}</div>
+          </div>
+        </div>
+        <img class="title-image" :src="imageUrl" />
       </div>
-      <img class="title-image" :src="imageUrl" />
     </div>
 
     <div class="content">
@@ -43,40 +48,54 @@ const imageUrl = computed(() => {
   height: 100%;
 }
 
-.title-image-wrapper {
+.title-box {
+  width: 100%;
+  height: 100%;
+}
+
+.title-content-wrapper{
   display: flex;
   position: relative;
-  width: 100%;
-  height: 804px;
+  width: 1200px;
+  height: 800px;
+  margin: auto
 }
 
 .title-image {
   position: absolute;
   height: 100%;
-  width: 60%;
-  object-fit: cover;
+  width: 50%;
   right: 0;
 }
 
 .title-text-wrapper {
   /* position: absolute; */
-  padding-top: 248px;
-  padding-left: 88px;
-  width: 60%
+  padding-top: 300px;
+}
+
+.title-subtext{
+  position: absolute;
+  bottom: 100px;
+  width: 600px;
 }
 
 .title-text {
-  font-size: 64px;
-  font-weight: 900;
-  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.title-product-name{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
 
 }
 
 .title-description {
-  font-size: 24px;
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: 400;
   width: 60%;
-  color: white;
 }
 
 .section-content {

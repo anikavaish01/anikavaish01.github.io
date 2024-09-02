@@ -2,8 +2,11 @@ interface CaseStudy {
     title: string
     header: {
         title: string
+        color: string
+        "product-name": string
         description: string
         image: string
+        "prototype-image": string
     }
     colors: {
         accent: string
@@ -19,6 +22,7 @@ interface Section {
     title: string
     icon: string
     colored: boolean
+    color: string
     data: Daum[]
 }
 
