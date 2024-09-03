@@ -1,11 +1,11 @@
 <template>
     <div>
         <div v-for="(data, index) in data" :key="`${data.type}-${index}`">
-            <ParagraphWrapper v-if="data.type === 'paragraph'" :content="(data.data as string)" />
-            <SubHeaderWrapper v-else-if="data.type === 'sub-header'" :content="(data.data as string)" />
+            <ParagraphWrapper v-if="data.type === 'paragraph'" :content="(data.data as string)" :color="data.color" />
+            <SubHeaderWrapper v-else-if="data.type === 'sub-header'" :content="(data.data as string)" :color="data.color" />
             <GridWrapper v-else-if="data.type === 'grid'" :data="(data.data as Daum[])" :colors="colors" :padding="data.padding ?? true"
                 :color="data.color" />
-            <ImageWrapper v-else-if="data.type === 'image'" :image="(data.data as string)" :colors="colors" :caption="data.caption" />
+            <ImageWrapper v-else-if="data.type === 'image'" :image="(data.data as string)" :colors="colors" :caption="data.caption" :link="data.link" />
             <NumbersWrapper v-else-if="data.type === 'numbers'" :content="(data.data as string)"
                 :color="colors.accent" />
             <EmphasisWrapper v-else-if="data.type === 'emphasis'" :content="(data.data as string)" />

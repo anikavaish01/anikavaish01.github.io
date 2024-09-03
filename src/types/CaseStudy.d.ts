@@ -24,13 +24,15 @@ interface Section {
     colored: boolean
     color: string
     data: Daum[]
+    "text-color"?: string
 }
 
 interface Daum {
     type: string
     padding?: boolean
-    caption?: String
+    caption?: string
     data: Daum[] | string | string[]
+    link?: string
     colored?: boolean
     color?: string
     "text-color"?: string

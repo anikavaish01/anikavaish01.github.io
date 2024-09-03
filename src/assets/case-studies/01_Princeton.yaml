@@ -60,6 +60,7 @@ sections:
 
       - type: sub-header
         data: Methods
+        color: "#ffffff"
 
       - type: grid
         padding: false
@@ -568,6 +569,7 @@ sections:
               - type: image
                 caption: Taming The Terabytes (Vol. I) details our research process, methods, and insights.
                 data: images/Princeton taming the terabytes.png
+                link: www.google.com
 
           - type: grid-item
             data:

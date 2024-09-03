@@ -1,14 +1,20 @@
 <script setup lang="ts">
+import { inject, computed, provide } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
+
+provide('navColor', '#ffffff')
+const navColor = computed(() => inject('navColor'))
+
 </script>
 
 <template>
   <header>
     <div class="wrapper">
+      <div>{{ navColor }}</div>
       <nav class="nav">
-        <RouterLink to="/">Work</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/resume">Resume</RouterLink>
+        <RouterLink activeClass="nav-active" to="/">Work</RouterLink>
+        <RouterLink activeClass="nav-active" to="/about">About</RouterLink>
+        <RouterLink activeClass="nav-active" to="/resume">Resume</RouterLink>
       </nav>
     </div>
   </header>
@@ -35,7 +41,7 @@ import { RouterLink, RouterView } from 'vue-router'
   font-weight: 500;
 }
 
-.nav a:focus{
+.nav-active {
   text-decoration: underline;
   text-underline-offset: 8px;
 }

@@ -3,19 +3,22 @@
     <!-- <QuestionIcon v-else-if="image === 'question'" class="image" /> -->
     <!-- <ContextIcon v-else-if="image === 'context'" class="image" /> -->
 
-    <inline-svg v-else-if="image.endsWith('svg')" style="width: 100% !important" :src="imageUrl"></inline-svg>
-    <div v-else class="image">
+    <div v-else-if="image.endsWith('svg')" style="width: 100% !important">
+        <inline-svg :src="imageUrl"></inline-svg>
+        <CaptionWrapper v-if="caption" :content="caption" />
+    </div>
+    
+    <component :is="link ? 'a' : 'div'" v-else class="image" :href="link" target="_blank">
         <img style="width: 100%" :src="imageUrl" />
         <CaptionWrapper v-if="caption" :content="caption" />
-
-    </div>
+    </component>
 </template>
 
 <script setup lang="ts">
 import { defineProps, computed } from 'vue'
 import BulbIcon from './icons/BulbIcon.vue';
 import CaptionWrapper from './CaptionWrapper.vue';
-const { image } = defineProps<{ image: string; caption?: string }>()
+const { image } = defineProps<{ image: string; caption?: string, link?: string }>()
 
 const imageUrl = computed(() => {
     return new URL(`../assets/${image}`, import.meta.url).toString()

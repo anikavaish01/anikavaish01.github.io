@@ -1,11 +1,12 @@
 <template>
-    <div class="small-sub-header">{{ content }}</div>
+    <div class="small-sub-header" :style="`color: ${color}`">{{ content }}</div>
 </template>
 
 <script lang="ts">
 export default {
     props: {
         content: String,
+        color: String
     }
 }
 </script>

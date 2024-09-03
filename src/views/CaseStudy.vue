@@ -3,7 +3,11 @@
     <div class="title-box" :style="`background-color: ${caseStudy.header.color}`" >
       <div class="title-content-wrapper">
         <div class="title-text-wrapper">
-          <div class="title-text">{{ caseStudy.header.title }}</div>
+          <div class="title-text-wrapper-wrapper">
+            <span class="title-text">This is&nbsp;</span>
+            <span class="title-text" :style="`color: #${caseStudy.colors.accent}`">{{ caseStudy.header.title }}'s&nbsp;</span>
+            <span class="title-text">story</span>
+          </div>
           <div class="title-subtext">
             <div class="title-product-name">{{ caseStudy.header['product-name']}}</div> 
             <div class="title-description">{{ caseStudy.header.description }}</div>
@@ -16,13 +20,15 @@
     <div class="content">
       <SectionWrapper v-for="items in caseStudy.sections" :key="items.title"
         :color="items.colored ? '#' + caseStudy.colors['accent-light'] : items.color" :icon="items.icon">
-        <SectionTitle v-if="items.title" :color="caseStudy.colors.accent" :content="items.title" />
+        <SectionTitle v-if="items.title" :color="items['text-color'] ?? caseStudy.colors.accent" :content="items.title" />
         <div class="section-content">
           <DynamicComponent :items="items.data" :colors="caseStudy.colors" />
         </div>
 
       </SectionWrapper>
     </div>
+
+    <div>footer here</div>
   </div>
 </template>
 
@@ -32,7 +38,7 @@
 import DynamicComponent from '@/components/DynamicComponent.vue'
 import SectionTitle from '@/components/SectionTitle.vue';
 import SectionWrapper from '@/components/SectionWrapper.vue'
-import { computed } from 'vue';
+import { computed, provide } from 'vue';
 
 const { caseStudy } = defineProps<{ caseStudy: CaseStudy }>()
 
@@ -103,5 +109,9 @@ const imageUrl = computed(() => {
   margin-left: auto;
   margin-right: auto;
   /* margin-left: 15px; */
+}
+
+.title-text-wrapper-wrapper {
+  display: flex;
 }
 </style>

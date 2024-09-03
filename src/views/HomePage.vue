@@ -1,20 +1,24 @@
 <template>
     <div class="header-container">
-    <div class="header-box">
-            <div class="header-title">HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER</div>
-            <div class="header-subtitle">Connecting people together, one story at a time.</div>
+        <div class="header-box">
+            <div class="header-title">
+                HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER
+            </div>
+            <div class="header-subtitle">
+                Connecting people together, one story at a time.
+            </div>
             <div class="header-image-wrapper">
                 <img class="header-image" src="../assets/images/HandShakeVector.svg" />
             </div>
+        </div>
     </div>
-</div>
 
     <router-link v-for="link in links" :key="link.url" class="case-study-link" :to="`cases/${link.url}`">
         <div class="left-wrapper">
             <div>
                 <img class="left-image" :src="link.image" />
             </div>
-            <div class="text">{{ link.title }}.</div>
+            <div class="text" :style="`color: #${link.colors.accent}`">{{ link.title }}.</div>
             <div class="sub-description">{{ link.subDescription }}</div>
             <div class="description">{{ link.description }}</div>
         </div>
@@ -25,28 +29,43 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from "vue";
 
-const { pages } = defineProps<{ pages: Record<string, {default: CaseStudy}> }>()
+const { pages } = defineProps<{
+    pages: Record<string, { default: CaseStudy }>;
+}>();
 const links = computed(() => {
-    return Object.values(pages).map(v => ({title: v.default.header.title, url: v.default.url, description: v.default.header.description, subDescription: v.default.header["product-name"], image: new URL(`../assets/${v.default.header.image}`, import.meta.url).toString(), rightImage: new URL(`../assets/${v.default.header["prototype-image"]}`, import.meta.url).toString()}))
-})
-
+    return Object.values(pages).map((v) => ({
+        title: v.default.header.title,
+        url: v.default.url,
+        description: v.default.header.description,
+        subDescription: v.default.header["product-name"],
+        image: new URL(
+            `../assets/${v.default.header.image}`,
+            import.meta.url
+        ).toString(),
+        rightImage: new URL(
+            `../assets/${v.default.header["prototype-image"]}`,
+            import.meta.url
+        ).toString(),
+        colors: v.default.colors
+    }));
+});
 </script>
 
 <style>
-
 .header-image-wrapper {
     display: flex;
 }
 
 .header-container {
-    background-color: #F6FAF6;
+    background-color: #f6faf6;
 }
 
-.header{
+.header {
     margin-bottom: 50px;
 }
+
 .header-box {
     width: 1200px;
     height: 800px;
@@ -55,7 +74,7 @@ const links = computed(() => {
 }
 
 .header-title {
-    color: #6E8270;
+    color: #6e8270;
     font-size: 16px;
 }
 
@@ -89,7 +108,7 @@ const links = computed(() => {
     width: 1200px;
     justify-content: space-between;
     height: 600px;
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     padding-left: 100px;
     border-radius: 10px;
 }
@@ -110,7 +129,7 @@ const links = computed(() => {
 }
 
 .title-image {
-    width: 100%
+    width: 100%;
 }
 
 .left-image {

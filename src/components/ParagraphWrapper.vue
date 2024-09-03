@@ -1,9 +1,9 @@
 <template>
     <div class="paragraph">
         <div class="paragraph-item" v-for="(line, index) in parsedContent" :key="`line-${index}`">
-            <div v-if="line.type === 'paragraph'">{{ line.data }}</div>
+            <div v-if="line.type === 'paragraph'" :style="`color: ${color}`">{{ line.data }}</div>
             <ul class="bullets" v-if="line.type === 'bullet'">
-                <li v-for="bullet in line.data" :key="bullet">{{ bullet }}</li>
+                <li v-for="bullet in line.data" :key="bullet" :style="`color: ${color}`">{{ bullet }}</li>
             </ul>
         </div>
     </div>
@@ -13,7 +13,8 @@
 import { computed } from 'vue';
 
 const { content } = defineProps({
-    content: String
+    content: String,
+    color: String
 })
 
 const parsedContent = computed(() => {

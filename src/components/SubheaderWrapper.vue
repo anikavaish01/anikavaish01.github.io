@@ -1,11 +1,12 @@
 <template>
-    <h2 class="subtitle">{{ content }}</h2>
+    <h2 class="subtitle" :style="`color: ${color}`">{{ content }}</h2>
 </template>
 
 <script lang="ts">
 export default {
     props: {
-        content: String
+        content: String,
+        color: String
     }
 }
 </script>
