@@ -497,6 +497,7 @@ sections:
 
   - title: Our recommendation
     color: "#395996"
+    text-color: "#ffffff"
     data:
       - type: paragraph
         color: "#ffffff"
