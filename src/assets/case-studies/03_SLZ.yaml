@@ -78,7 +78,7 @@ sections:
                 data: Design
 
               - type: paragraph
-                data: Storyboarding / Crazy 8’s / Wireframing / Usability Testing
+                data: Storyboarding / Crazy 8's / Wireframing / Usability Testing
 
   - title: Context
     data:
@@ -94,7 +94,7 @@ sections:
 
       - type: paragraph
         data: |
-          Vishal is a 34 year-old marketing manager at a medium-size startup in Pittsburgh, PA. He’s been a long-time resident of the city, completing both his Bachelor’s and Master’s degree at the University of Pittsburgh. In 2012, Vishal sadly met with a car accident that left him moderately paralyzed from the waist down. Despite his circumstances, Vishal is labeled by his doctors as “high-functioning,” which means that he is able to move about his day quite independently: he drives, shops, exercises, and works without any additional assistance aside from his super dope wheelchair wheels.
+          Vishal is a 34 year-old marketing manager at a medium-size startup in Pittsburgh, PA. He's been a long-time resident of the city, completing both his Bachelor's and Master's degree at the University of Pittsburgh. In 2012, Vishal sadly met with a car accident that left him moderately paralyzed from the waist down. Despite his circumstances, Vishal is labeled by his doctors as “high-functioning,” which means that he is able to move about his day quite independently: he drives, shops, exercises, and works without any additional assistance aside from his super dope wheelchair wheels.
 
       - type: spacer
 
@@ -110,7 +110,7 @@ sections:
           Recently, Vishal has noticed some purple curbs near some of his favorite eateries and the local shops he frequents. They have a sign nearby that tell him that these are “Smart Loading Zones,” that a person needs to register before using them, and that they utilize graduated pay-by-minute parking... WHAT!?
 
       - type: paragraph
-        data: He has no idea what these are and assumes that he can’t use the spots anymore. Now, Vishal is extremely frustrated that he needs to park nearly a block away and struggle to wheel-up the broken Pittsburgh sidewalks to pick up dinner. He’s desperately missing the days of storefront parking.
+        data: He has no idea what these are and assumes that he can't use the spots anymore. Now, Vishal is extremely frustrated that he needs to park nearly a block away and struggle to wheel-up the broken Pittsburgh sidewalks to pick up dinner. He's desperately missing the days of storefront parking.
 
       - type: image
         data: images/SLZ sign.png
@@ -143,10 +143,10 @@ sections:
           I conducted comprehensive desk research and discovered a growing confusion and unease surrounding the SLZ initiative.
 
       - type: paragraph
-        data: Referencing press releases issued by the city government, the official SLZ pamphlet put forth by the Pittsburgh parking authority, and other newspaper and social media material, I investigated both the nitty-gritty specifics of the program infrastructure as well as the general public’s sentiment towards it.
+        data: Referencing press releases issued by the city government, the official SLZ pamphlet put forth by the Pittsburgh parking authority, and other newspaper and social media material, I investigated both the nitty-gritty specifics of the program infrastructure as well as the general public's sentiment towards it.
 
       - type: paragraph
-        data: These materials served to expose the government’s half-baked plan; specifically, I came across 20+ Reddit threads with unanswered civilian questions, critical (bordering on caustic) articles from local news outlets, no definite payment structure or enforcement specification, and most problematic -- a severe lack of clarity surrounding rules and regulations.
+        data: These materials served to expose the government's half-baked plan; specifically, I came across 20+ Reddit threads with unanswered civilian questions, critical (bordering on caustic) articles from local news outlets, no definite payment structure or enforcement specification, and most problematic -- a severe lack of clarity surrounding rules and regulations.
 
       - type: spacer
 
@@ -202,7 +202,7 @@ sections:
 
       - type: sub-header
         data: |
-          The web application violates several of Jakob Nielsen’s heuristics, with the primary usability issues revolving around "help and documentation" and "match between system and the real world." Specifically, there is a lack of resources and poorly defined payment and parking metrics.
+          The web application violates several of Jakob Nielsen's heuristics, with the primary usability issues revolving around "help and documentation" and "match between system and the real world." Specifically, there is a lack of resources and poorly defined payment and parking metrics.
 
   - title: User Interviews
     data:
@@ -211,7 +211,7 @@ sections:
           Reaching out to a vulnerable population is always tricky. Through multiple recruitment mediums, my team and I were able to speak to 5 disabled drivers. These drivers conveyed a limited knowledge, general distrust, and severe frustration/ concern with SLZs.
 
       - type: paragraph
-        data: Up until this point, my preliminary research hadn’t surfaced any specific sentiments regarding accessibility. To learn more about the disabled driver experience, we subsequently carried out 5 interviews with disabled drivers, operationalizing “disability” as individuals with permanent disabilities, temporary physical disabilities, and of older age (65+).
+        data: Up until this point, my preliminary research hadn't surfaced any specific sentiments regarding accessibility. To learn more about the disabled driver experience, we subsequently carried out 5 interviews with disabled drivers, operationalizing “disability” as individuals with permanent disabilities, temporary physical disabilities, and of older age (65+).
 
       - type: paragraph
         data: The objectives of the interviews were twofold. Firstly, we aimed to gain a comprehensive understanding of the accessibility of the SLZs, how individuals with various types of disabilities engage with them, and the specific situations in which they make use of these zones. Secondly, we sought to identify the challenges and difficulties encountered by these individuals, while also comparing their experiences with those in other parking zones across the city. I drafted the following testing and analysis plan.
@@ -312,12 +312,12 @@ sections:
     data:
       - type: header
         data: |
-          Using these insights, we did multiple rounds of Crazy 8’s, focusing on key touchpoints for improving accessibility, including payment methods, registration processes, physical design, policy awareness, and tech literacy.
+          Using these insights, we did multiple rounds of Crazy 8's, focusing on key touchpoints for improving accessibility, including payment methods, registration processes, physical design, policy awareness, and tech literacy.
 
       - type: spacer
 
       - type: image
-        caption: A snapshot of one round of Crazy 8’s experimenting with ideas like an automated ramp, an informational pamphlet, a revised payment structure, and more.
+        caption: A snapshot of one round of Crazy 8's experimenting with ideas like an automated ramp, an informational pamphlet, a revised payment structure, and more.
         data: images/SLZ crazy 8.png
 
       - type: spacer
@@ -325,7 +325,7 @@ sections:
       - type: spacer
 
       - type: paragraph
-        data: Using our Crazy 8’s as inspiration, we drafted a number of storyboards illustrating ideas such as incorporating conventional forms of payment (like parking meters), adjusting sign heights, linking license plates with bank accounts, automatic adjustment of parking rates, doctor-issued disability verification stickers, and many others.
+        data: Using our Crazy 8's as inspiration, we drafted a number of storyboards illustrating ideas such as incorporating conventional forms of payment (like parking meters), adjusting sign heights, linking license plates with bank accounts, automatic adjustment of parking rates, doctor-issued disability verification stickers, and many others.
 
   - title: Storyboarding
     colored: true

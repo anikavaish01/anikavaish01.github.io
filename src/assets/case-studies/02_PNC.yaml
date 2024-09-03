@@ -94,11 +94,11 @@ sections:
 
       - type: paragraph
         data: |
-          Maria is a 73-year-old woman living in Pittsburgh, who recently lost her husband of 54 years to cancer. The loss was devastating, leaving Maria utterly heartbroken and overwhelmed by the uncertainty of her physical and financial future. While mostly independent, Maria faces her own health challenges, having been diagnosed with early onset Parkinson’s disease; she has trouble moving around, and requires assistance with daily tasks like loading the dishwasher, cooking, and sweeping the floors.
+          Maria is a 73-year-old woman living in Pittsburgh, who recently lost her husband of 54 years to cancer. The loss was devastating, leaving Maria utterly heartbroken and overwhelmed by the uncertainty of her physical and financial future. While mostly independent, Maria faces her own health challenges, having been diagnosed with early onset Parkinson's disease; she has trouble moving around, and requires assistance with daily tasks like loading the dishwasher, cooking, and sweeping the floors.
 
       - type: paragraph
         data: |
-          Her daughter, Romana, is a 42-year-old nurse living in another state with her own family. Despite her strong desire to help and knowledge that her mother’s physical condition will worsen, Romana feels overwhelmed and unsure how to support her mother.
+          Her daughter, Romana, is a 42-year-old nurse living in another state with her own family. Despite her strong desire to help and knowledge that her mother's physical condition will worsen, Romana feels overwhelmed and unsure how to support her mother.
 
       - type: spacer
 
@@ -306,7 +306,7 @@ sections:
             text-color: "#ffffff"
             data:
               - type: paragraph
-                data: Adult children are typically not involved in their parents’ finances until a trigger event occurs.
+                data: Adult children are typically not involved in their parents' finances until a trigger event occurs.
 
           - type: grid-item
             color: "#B2A49A"
@@ -341,7 +341,7 @@ sections:
 
       - type: paragraph
         data: |
-          We had all these disparate ideas, but we didn’t have a clear idea about which direction to move in and which solutions actually served our customer needs. We subsequently decided to map out a solution matrix and check off what specific segment needs were being met.
+          We had all these disparate ideas, but we didn't have a clear idea about which direction to move in and which solutions actually served our customer needs. We subsequently decided to map out a solution matrix and check off what specific segment needs were being met.
 
       - type: paragraph
         data: |
@@ -406,13 +406,13 @@ sections:
             color: "#EDFCF2"
             data:
               - type: paragraph
-                data: 88% of users conveyed that they would trust the results because RetireReady is situated within PNC’s existing ecosystem of tools, and PNC is a reliable brand.
+                data: 88% of users conveyed that they would trust the results because RetireReady is situated within PNC's existing ecosystem of tools, and PNC is a reliable brand.
 
           - type: grid-item
             color: "#FCEBEB"
             data:
               - type: paragraph
-                data: 33% of users mentioned that they had seen similar tools online, and they didn’t know how this was any different than those tools.
+                data: 33% of users mentioned that they had seen similar tools online, and they didn't know how this was any different than those tools.
 
       - type: grid
         data:
@@ -434,7 +434,7 @@ sections:
             color: "#EDFCF2"
             data:
               - type: paragraph
-                data: 44% of users mentioned that they would be interested in PNC’s suggested offerings, and would use those recommendations to invest, or subscribe to different platforms.
+                data: 44% of users mentioned that they would be interested in PNC's suggested offerings, and would use those recommendations to invest, or subscribe to different platforms.
 
           - type: grid-item
             color: "#FCEBEB"
@@ -452,7 +452,7 @@ sections:
     data:
       - type: paragraph
         data: |
-          Based on this feedback as well as that provided by our partners at PNC, we discussed core concepts that are crucial to the design and go-to-market strategy for RetireReady. Accordingly, I designed a number of mid-fidelity prototypes of RetireReady’s landing page, onboarding process, and dashboard design that centered around this main functionality.
+          Based on this feedback as well as that provided by our partners at PNC, we discussed core concepts that are crucial to the design and go-to-market strategy for RetireReady. Accordingly, I designed a number of mid-fidelity prototypes of RetireReady's landing page, onboarding process, and dashboard design that centered around this main functionality.
 
       - type: grid
         data:
@@ -501,7 +501,7 @@ sections:
             data:
               - type: image
                 caption: |
-                  To better align with positioning statement, we focused in on RetireReady’s differentiating factor: medical expense projections and ADLS recommendations. 
+                  To better align with positioning statement, we focused in on RetireReady's differentiating factor: medical expense projections and ADLS recommendations. 
                   We additionally added call to actions to PNC product recommendations (external partnerships, investment products, & 1-on-1 advisory services).
                 data: images/PNC projection breakdown.png
 

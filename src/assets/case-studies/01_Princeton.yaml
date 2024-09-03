@@ -122,7 +122,7 @@ sections:
 
       - type: header
         data: |
-          TigerData aims to simplify the process of accessing and organizing data by replacing the command line with an easily accessible front-end. Let’s design it!
+          TigerData aims to simplify the process of accessing and organizing data by replacing the command line with an easily accessible front-end. Let's design it!
 
       - type: image
         caption: As a web application, TigerData replaces the command line and allows researchers to access and manage research data that is stored on Princeton's network of clusters.
@@ -132,7 +132,7 @@ sections:
     data:
       - type: paragraph
         data: |
-          To systematically approach our research process, I led a team meeting wherein we leveraged Francine Gemperle’s framework to brainstorm our research goals and desired outcomes. Accordingly, we mapped a comprehensive research plan.
+          To systematically approach our research process, I led a team meeting wherein we leveraged Francine Gemperle's framework to brainstorm our research goals and desired outcomes. Accordingly, we mapped a comprehensive research plan.
 
       - type: spacer
       - type: spacer
@@ -188,13 +188,13 @@ sections:
 
       - type: header
         data: |
-          Extrapolating from our literature review and a unviersity-wide data growth curve of 30%, I estimated that current (unsustainable) data practices would increase the university’s operational costs by $50M in the year 2046 alone.
+          Extrapolating from our literature review and a unviersity-wide data growth curve of 30%, I estimated that current (unsustainable) data practices would increase the university's operational costs by $50M in the year 2046 alone.
 
   - title: Heuristic evaluation
     data:
       - type: paragraph
         data: |
-          Our literature review validated that DM best practices are of utmost importance for operational efficiency. In conversations with the TigerData team, we were made aware that there already exist tools that are meant to aid in these processes. We did a deep dive into the most commonly used tool, the Open Science Framework (OSF), because of its alignment with TigerData’s mission statement. Our analysis included assessing OSF’s features, usability, and integration within academic and research communities.
+          Our literature review validated that DM best practices are of utmost importance for operational efficiency. In conversations with the TigerData team, we were made aware that there already exist tools that are meant to aid in these processes. We did a deep dive into the most commonly used tool, the Open Science Framework (OSF), because of its alignment with TigerData's mission statement. Our analysis included assessing OSF's features, usability, and integration within academic and research communities.
 
       - type: spacer
 
@@ -521,7 +521,7 @@ sections:
             data:
               - type: image
                 caption: |
-                  We can leverage integrations with existing repositories and resources to foster a culture of data sharing, collaboration, and data recycling. Moreover, by incorporating a familiar system that is already well-situated within the Princeton research ecosystem, researchers are more likely to be comfortable sharing sample datasets and other data; “I’d definitely share my data if I could have control over who was using it.”
+                  We can leverage integrations with existing repositories and resources to foster a culture of data sharing, collaboration, and data recycling. Moreover, by incorporating a familiar system that is already well-situated within the Princeton research ecosystem, researchers are more likely to be comfortable sharing sample datasets and other data; “I'd definitely share my data if I could have control over who was using it.”
                 data: images/Princeton data commons.png
 
   - title:
