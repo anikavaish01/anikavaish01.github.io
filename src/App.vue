@@ -8,7 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
       <nav class="nav">
-        <a><img class="nav-image" src="/favicon.svg" /></a>
+        <RouterLink to="/"><img class="nav-image" src="/favicon.svg" /></RouterLink>
         <div>
           <RouterLink activeClass="nav-active" to="/">Work</RouterLink>
           <RouterLink activeClass="nav-active" to="/about">About</RouterLink>
