@@ -8,24 +8,44 @@
                 Connecting people together, one story at a time.
             </div>
             <div class="header-image-wrapper">
-                <img class="header-image" src="../assets/images/HandShakeVector.svg" />
+                <img class="header-image" src="../assets/images/Homepage connection.svg" />
             </div>
         </div>
     </div>
 
-    <router-link v-for="link in links" :key="link.url" class="case-study-link" :to="`cases/${link.url}`">
-        <div class="left-wrapper">
-            <div>
-                <img class="left-image" :src="link.image" />
+    <div class="items">
+        <router-link v-for="link in links" :key="link.url" class="case-study-link" :to="`cases/${link.url}`">
+            <div class="left-wrapper">
+                <div>
+                    <img class="left-image" :src="link.image" />
+                </div>
+                <div class="text" :style="`color: #${link.colors.accent}`">{{ link.title }}.</div>
+                <div class="sub-description">{{ link.subDescription }}</div>
+                <div class="description">{{ link.description }}</div>
             </div>
-            <div class="text" :style="`color: #${link.colors.accent}`">{{ link.title }}.</div>
-            <div class="sub-description">{{ link.subDescription }}</div>
-            <div class="description">{{ link.description }}</div>
+            <div class="right-wrapper">
+                <img class="title-image" :src="link.rightImage" />
+            </div>
+        </router-link>
+    </div>
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-title">Let's create together!</div>
+        <div class="links">
+          <div class="social-links">
+          <a class="footer-social-link" href="https://www.linkedin.com/in/anikavaishampayan/" target="_blank">LinkedIn↗</a>
+          <a class="footer-social-link" href="https://medium.com/mhci-x-princeton-capstone-2024">Medium↗</a>
+          <a class="footer-social-link" href="mailto:anika.vaishampayan@gmail.com">Email↗</a>
         </div>
-        <div class="right-wrapper">
-            <img class="title-image" :src="link.rightImage" />
+        <div class="internal-links">
+          <div><a class="footer-internal-link" href="/about">About</a></div>
+          <div><a class="footer-internal-link" href="cases/SLZ">Smart Loading Zones (Vishal)</a></div>
+          <div><a class="footer-internal-link" href="cases/PNC">RetireReady (Maria & Romana)</a></div>
+          <div><a class="footer-internal-link" href="cases/Princeton">TigerData (Catelyn)</a></div>
         </div>
-    </router-link>
+        </div>
+      </div>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -59,7 +79,7 @@ const links = computed(() => {
 }
 
 .header-container {
-    background-color: #f6faf6;
+    background-color: #e1eae2;
 }
 
 .header {
@@ -79,7 +99,6 @@ const links = computed(() => {
 }
 
 .header-image {
-    padding-top: 80px;
     margin: auto;
 }
 
@@ -100,15 +119,19 @@ const links = computed(() => {
     font-size: 16px;
 }
 
+.items{
+    margin-top:100px;
+}
+
 .case-study-link {
-    margin-top: 100px;
+    margin-top:50px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     width: 1200px;
     justify-content: space-between;
     height: 600px;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
     padding-left: 100px;
     border-radius: 10px;
 }
@@ -140,4 +163,49 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.footer-container{
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #697e65;
+  color: #ffffff
+}
+
+.footer{
+  width: 1000px;
+  margin: auto
+}
+
+.footer-title{
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer-social-link{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+.footer-internal-link{
+  color: rgb(225, 225, 225)
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links{
+  width:50%;
+}
+
+.internal-links{
+  width:50%;
+  margin:auto;
+}
+
 </style>

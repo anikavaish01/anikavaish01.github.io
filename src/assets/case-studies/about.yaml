@@ -1,14 +1,16 @@
-title: About
-url: About
+title: about
+url: about
 colors:
   accent: "FFB21C"
   accent-light: "FFECE0"
   boxes: "151E2C"
   subtitle: "000000"
 header:
-  title: Thanks for being here
+  title: Anika
+  color: "#FFFAF0"
+  product-name: Thanks for being here
   description: There's so many stories yet to tell. Let's tell them together!
-  image:
+  image: images/Anika.svg
 sections:
   - title:
     color: "#FFB21C"

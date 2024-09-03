@@ -6,7 +6,7 @@ colors:
   boxes: "151E2C"
   subtitle: "000000"
 header:
-  title: Maria and Romana
+  title: Maria & Romana
   color: "#F3EAE3"
   product-name: RetireReady
   description: A collaborative retirement planning financial tool leveraging emerging AI technology
@@ -61,6 +61,7 @@ sections:
 
       - type: sub-header
         data: Methods
+        color: white
 
       - type: grid
         padding: false
@@ -140,7 +141,7 @@ sections:
       - type: grid
         data:
           - type: grid-item
-            color: "#FAFAFA"
+            color: "#f9f9f9"
             data:
               - type: numbers
                 data: "01"
@@ -159,7 +160,7 @@ sections:
                 data: images/PNC quote 1.svg
 
           - type: grid-item
-            color: "#FAFAFA"
+            color: "#f9f9f9"
             data:
               - type: numbers
                 data: "02"
@@ -179,7 +180,7 @@ sections:
       - type: grid
         data:
           - type: grid-item
-            color: "#FAFAFA"
+            color: "#f9f9f9"
             data:
               - type: numbers
                 data: "03"
@@ -198,7 +199,7 @@ sections:
                 data: images/PNC quote 3.svg
 
           - type: grid-item
-            color: "#FAFAFA"
+            color: "#f9f9f9"
             data:
               - type: numbers
                 data: "04"
@@ -352,7 +353,7 @@ sections:
 
       - type: image
         caption: A solution matrix with all the proposed feature solutions on the left, and the market segments on the right. Green checks signify a customer need being met, while red crosses signify a solution that is not optimal, not necessary, or not useful.
-        data: images/PNC solution matrix.svg
+        data: images/PNC solution matrix.png
 
       - type: spacer
       - type: spacer
@@ -373,7 +374,7 @@ sections:
 
       - type: image
         caption: A rough overview of the major pros and cons of existing financial planning tools and calculators., drawn from a thorough competitive analysis of industry leaders in financial products and services.
-        data: images/PNC competitive analysis.svg
+        data: images/PNC competitive analysis.png
 
       - type: spacer
       - type: spacer
@@ -536,17 +537,21 @@ sections:
     text-color: "#ffffff"
     data:
       - type: paragraph
+        color: "#ffffff"
         data: |
           With deadlines fast approaching, we parallelly developed a robust product strategy for RetireReady. This involved creating a business model canvas, which included estimation of costs, revenue, market size, key partners, and potential risks in the first year of development and launch.
 
       - type: paragraph
+        color: "#ffffff"
         data: |
           Finally, with both a conceptual framework of the product strategy and a concrete vision for the product itself, we forwarded our recommendation to the PNC Experience Design team:
 
       - type: paragraph
+        color: "#ffffff"
         data: |
           RetireReady is a tool that is meant to facilitate financial planning. The main differentiator between RetireReady and competitors is the healthcare considerations that are integrated into the AI calculation of expected expenses and personalized recommendations. While the tool is FREE for end users, the primary means of revenue for PNC is through these recommendations. Specifically, PNC will generate incremental revenue by promoting its own products (PNC Advisory Services and PNC Investments) as well as commissions from partner companies (e.g., ADLS service providers, meal services, etc.). 
 
       - type: paragraph
+        color: "#ffffff"
         data: |
           PNC will work over the next couple of years to test and integrate RetireReady with another similar technology that they have recently developed, Smart Fam. 

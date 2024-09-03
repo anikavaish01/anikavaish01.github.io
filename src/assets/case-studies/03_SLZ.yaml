@@ -1,7 +1,7 @@
 title: SLZ
 url: SLZ
 colors:
-  accent: "034FE4"
+  accent: "395996"
   accent-light: "F2F7FF"
   boxes: "151E2C"
   subtitle: "000000"
@@ -58,6 +58,7 @@ sections:
 
       - type: sub-header
         data: Methods
+        color: "#ffffff"
 
       - type: grid
         padding: false
@@ -234,7 +235,7 @@ sections:
       - type: grid
         data:
           - type: grid-item
-            color: "#FAFAFA"
+            color: "#f9f9f9"
             data:
               - type: numbers
                 data: "01"
@@ -253,7 +254,7 @@ sections:
                 data: images/SLZ quote 1.svg
 
           - type: grid-item
-            color: "#FAFAFA"
+            color: "#f9f9f9"
             data:
               - type: numbers
                 data: "02"
@@ -273,7 +274,7 @@ sections:
       - type: grid
         data:
           - type: grid-item
-            color: "#FAFAFA"
+            color: "#f9f9f9"
             data:
               - type: numbers
                 data: "03"
@@ -291,7 +292,7 @@ sections:
                 data: images/SLZ quote 3.svg
 
           - type: grid-item
-            color: "#FAFAFA"
+            color: "#f9f9f9"
             data:
               - type: numbers
                 data: "04"
@@ -495,9 +496,10 @@ sections:
                 data: images/SLZ disability application prototype.png
 
   - title: Our recommendation
-    colored: true
+    color: "#395996"
     data:
       - type: paragraph
+        color: "#ffffff"
         data: |
           We presented our final recommendation to folks at the City of Pittsburgh Parking Authority. Specifically, to streamline the experience of users with disabilities, we proposed  integrating a short user flow that occurs at the end of the registration process and allows drivers with disabilities the opportunity to apply for financial and time accommodations by scanning or inputting their handicap placard identification number into the system.
 

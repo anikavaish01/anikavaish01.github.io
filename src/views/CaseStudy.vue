@@ -6,7 +6,7 @@
           <div class="title-text-wrapper-wrapper">
             <span class="title-text">This is&nbsp;</span>
             <span class="title-text" :style="`color: #${caseStudy.colors.accent}`">{{ caseStudy.header.title }}'s&nbsp;</span>
-            <span class="title-text">story</span>
+            <span class="title-text">story.</span>
           </div>
           <div class="title-subtext">
             <div class="title-product-name">{{ caseStudy.header['product-name']}}</div> 
@@ -28,7 +28,24 @@
       </SectionWrapper>
     </div>
 
-    <div>footer here</div>
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-title">Let's create together!</div>
+        <div class="links">
+          <div class="social-links">
+          <a class="footer-social-link" href="https://www.linkedin.com/in/anikavaishampayan/">LinkedIn↗</a>
+          <a class="footer-social-link" href="https://medium.com/mhci-x-princeton-capstone-2024">Medium↗</a>
+          <a class="footer-social-link" href="mailto:anika.vaishampayan@gmail.com">Email↗</a>
+        </div>
+        <div class="internal-links">
+          <div><a class="footer-internal-link" href="/about">About</a></div>
+          <div><a class="footer-internal-link" href="cases/SLZ">Smart Loading Zones (Vishal)</a></div>
+          <div><a class="footer-internal-link" href="cases/PNC">RetireReady (Maria & Romana)</a></div>
+          <div><a class="footer-internal-link" href="cases/Princeton">TigerData (Catelyn)</a></div>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -114,4 +131,47 @@ const imageUrl = computed(() => {
 .title-text-wrapper-wrapper {
   display: flex;
 }
+
+.footer-container{
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f9f9f9;
+  color: #000000;
+}
+
+.footer{
+  width: 1000px;
+  margin: auto
+}
+
+.footer-title{
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.footer-social-link{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+.footer-internal-link{
+  color: rgb(160, 159, 159)
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+}
+.social-links{
+  width:50%;
+}
+.internal-links{
+  width:50%;
+  margin:auto;
+}
+
 </style>
