@@ -18,8 +18,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 .wrapper {
-  height: 120px;
-  background-color: #F6FAF6;
+  height: 100px;
   display: flex;
 }
 
@@ -32,7 +31,12 @@ import { RouterLink, RouterView } from 'vue-router'
 
 .nav a {
   margin-right: 50px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
+}
+
+.nav a:focus{
+  text-decoration: underline;
+  text-underline-offset: 8px;
 }
 </style>

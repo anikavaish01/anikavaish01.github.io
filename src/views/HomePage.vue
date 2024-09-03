@@ -1,6 +1,6 @@
 <template>
     <div class="header-container">
-    <div class="header">
+    <div class="header-box">
             <div class="header-title">HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER</div>
             <div class="header-subtitle">Connecting people together, one story at a time.</div>
             <div class="header-image-wrapper">
@@ -42,15 +42,16 @@ const links = computed(() => {
 
 .header-container {
     background-color: #F6FAF6;
-    width: 100%;
-    padding-bottom: 100px;
-    margin-bottom: 100px;
 }
 
-.header {
-    padding-top: 100px;
-    width: 60%;
-    margin-left: 100px;
+.header{
+    margin-bottom: 50px;
+}
+.header-box {
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    padding-top: 200px;
 }
 
 .header-title {
@@ -59,31 +60,35 @@ const links = computed(() => {
 }
 
 .header-image {
-    margin-left: auto;
+    padding-top: 80px;
+    margin: auto;
 }
 
 .header-subtitle {
     font-size: 50px;
     font-weight: 900;
+    width: 70%;
 }
 
 .sub-description {
     font-weight: 600;
     font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .description {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .case-study-link {
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    width: 95%;
+    width: 1200px;
     justify-content: space-between;
     height: 600px;
-    margin-bottom: 75px;
     background-color: #FAFAFA;
     padding-left: 100px;
     border-radius: 10px;
@@ -91,6 +96,7 @@ const links = computed(() => {
 
 .left-wrapper {
     align-content: center;
+    width: 40%;
 }
 
 .right-wrapper {
@@ -98,9 +104,9 @@ const links = computed(() => {
 }
 
 .text {
-    font-size: 50px;
-    font-weight: 900;
-    flex: 0 0 60%;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .title-image {
