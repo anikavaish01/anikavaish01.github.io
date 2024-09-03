@@ -18,9 +18,9 @@
     </div>
 
     <div class="content">
-      <SectionWrapper v-for="items in caseStudy.sections" :key="items.title"
+      <SectionWrapper v-for="items in sections" :key="JSON.stringify(items)"
         :color="items.colored ? '#' + caseStudy.colors['accent-light'] : items.color" :icon="items.icon">
-        <SectionTitle v-if="items.title" :color="items['text-color'] ?? caseStudy.colors.accent" :content="items.title" />
+        <SectionTitle v-if="items.title" :color="items['text-color'] ?? `#${caseStudy.colors.accent}`" :content="items.title" />
         <div class="section-content">
           <DynamicComponent :items="items.data" :colors="caseStudy.colors" />
         </div>
@@ -38,10 +38,10 @@
           <a class="footer-social-link" href="mailto:anika.vaishampayan@gmail.com">Email↗</a>
         </div>
         <div class="internal-links">
-          <div><a class="footer-internal-link" href="/about">About</a></div>
-          <div><a class="footer-internal-link" href="cases/SLZ">Smart Loading Zones (Vishal)</a></div>
-          <div><a class="footer-internal-link" href="cases/PNC">RetireReady (Maria & Romana)</a></div>
-          <div><a class="footer-internal-link" href="cases/Princeton">TigerData (Catelyn)</a></div>
+          <div><RouterLink class="footer-internal-link" to="/about">About</RouterLink></div>
+          <div><RouterLink class="footer-internal-link" to="/cases/SLZ">Smart Loading Zones (Vishal)</RouterLink></div>
+          <div><RouterLink class="footer-internal-link" to="/cases/PNC">RetireReady (Maria & Romana)</RouterLink></div>
+          <div><RouterLink class="footer-internal-link" to="/cases/Princeton">TigerData (Catelyn)</RouterLink></div>
         </div>
         </div>
       </div>
@@ -55,12 +55,16 @@
 import DynamicComponent from '@/components/DynamicComponent.vue'
 import SectionTitle from '@/components/SectionTitle.vue';
 import SectionWrapper from '@/components/SectionWrapper.vue'
-import { computed, provide } from 'vue';
+import { computed } from 'vue';
+import { RouterLink } from 'vue-router'
 
-const { caseStudy } = defineProps<{ caseStudy: CaseStudy }>()
+const props = defineProps<{ caseStudy: CaseStudy }>()
+
+const caseStudy = computed(() => props.caseStudy) 
+const sections = computed(() => props.caseStudy.sections)
 
 const imageUrl = computed(() => {
-  return new URL(`../assets/${caseStudy.header.image}`, import.meta.url).toString()
+  return new URL(`../assets/${props.caseStudy.header.image}`, import.meta.url).toString()
 })
 
 </script>
@@ -133,7 +137,6 @@ const imageUrl = computed(() => {
 }
 
 .footer-container{
-  margin-top: 100px;
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #f9f9f9;
