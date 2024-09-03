@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div v-for="(data, index) in data" :key="`${data.type}-${index}`">
+        <div v-for="(data, index) in data" :key="`${JSON.stringify(data)}-${index}`">
             <ParagraphWrapper v-if="data.type === 'paragraph'" :content="(data.data as string)" :color="data.color" />
             <SubHeaderWrapper v-else-if="data.type === 'sub-header'" :content="(data.data as string)" :color="data.color" />
             <GridWrapper v-else-if="data.type === 'grid'" :data="(data.data as Daum[])" :colors="colors" :padding="data.padding ?? true"
@@ -22,7 +22,6 @@
 <script setup lang="ts">
 import ParagraphWrapper from '@/components/ParagraphWrapper.vue'
 import GridWrapper from '@/components/GridWrapper.vue'
-import FooterWrapper from '@/components/FooterWrapper.vue'
 import SubHeaderWrapper from '@/components/SubheaderWrapper.vue'
 import ImageWrapper from '@/components/ImageWrapper.vue'
 import EmphasisWrapper from '@/components/EmphasisWrapper.vue'
@@ -32,10 +31,10 @@ import SpacerWrapper from '@/components/SpacerWrapper.vue'
 import GraphicText from './GraphicText.vue'
 import HeaderWrapper from './HeaderWrapper.vue'
 import { computed } from 'vue'
-import CaptionWrapper from './CaptionWrapper.vue'
 import SmallSubHeader from './SmallSubHeader.vue'
 
 
 const { items, colors } = defineProps<{ items: Daum[], colors: CaseStudy['colors'] }>()
 const data = computed(() => items as Daum[])
+// console.log(data)
 </script>

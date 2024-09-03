@@ -1,5 +1,5 @@
 <template>
-    <h2 class="section-header" :style="`color: #${color}`">{{ content }}</h2>
+    <h2 class="section-header" :style="`color: ${color}`">{{ content }}</h2>
 </template>
 
 <script lang="ts">

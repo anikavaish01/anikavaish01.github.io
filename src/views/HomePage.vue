@@ -73,6 +73,16 @@ const links = computed(() => {
 });
 </script>
 
+<style scoped>
+.footer-container{
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #697e65;
+  color: #ffffff
+}
+</style>
+
 <style>
 .header-image-wrapper {
     display: flex;
@@ -162,14 +172,6 @@ const links = computed(() => {
 a {
     color: inherit;
     text-decoration: none;
-}
-
-.footer-container{
-  margin-top: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #697e65;
-  color: #ffffff
 }
 
 .footer{

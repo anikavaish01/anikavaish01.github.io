@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 import CaseStudyComponent from '@/views/CaseStudy.vue'
 import HomeComponent from '@/views/HomePage.vue'
 
@@ -36,7 +36,9 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: routes,
   scrollBehavior: () => {
-    return {top: 0, left: 0, behavior: 'smooth'}
+    return new Promise((resolve) => {
+      resolve({top: 0, left: 0, behavior: 'smooth'})
+    })
   }
 })
 export default router

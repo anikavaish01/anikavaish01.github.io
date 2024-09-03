@@ -1,6 +1,6 @@
 <template>
     <div class="blocks" :style="`background-color: ${color ?? 'transparent'}`">
-        <div v-for="(item, index) in data" :key="`${item.type}-${index}`" :class="`block-item ${padding ? 'block-item-padding' : ''}`"
+        <div v-for="(item, index) in data" :key="`${JSON.stringify(item)}-${index}`" :class="`block-item ${padding ? 'block-item-padding' : ''}`"
             :style="`background-color: ${item.color ?? 'transparent'}; color: ${item['text-color'] ?? 'inherit'}`">
             <DynamicComponent v-if="item.type === 'grid-item'" :items="(item.data as Daum[])" :colors="props.colors" />
         </div>

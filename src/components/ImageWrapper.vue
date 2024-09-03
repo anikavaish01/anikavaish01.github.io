@@ -4,7 +4,7 @@
     <!-- <ContextIcon v-else-if="image === 'context'" class="image" /> -->
 
     <div v-else-if="image.endsWith('svg')" style="width: 100% !important">
-        <inline-svg :src="imageUrl"></inline-svg>
+        <inline-svg :src="imageUrl" style="width: 100% !important"></inline-svg>
         <CaptionWrapper v-if="caption" :content="caption" />
     </div>
     
