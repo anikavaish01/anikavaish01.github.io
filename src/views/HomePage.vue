@@ -110,8 +110,8 @@ const links = computed(() => {
 }
 
 .header-description{
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 16px;
+    width: 40%;
 }
 
 .header-image-wrapper{
