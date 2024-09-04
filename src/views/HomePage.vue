@@ -4,11 +4,13 @@
             <div class="header-title">
                 HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER
             </div>
-            <div class="header-subtitle">
+            <div class="header-containter">
+                <div class="header-subtitle">
                 Connecting people together, one story at a time.
-            </div>
-            <div class="header-image-wrapper">
-                <img class="header-image" src="../assets/images/Homepage connection.svg" />
+                </div>
+                <div class="header-image-wrapper">
+                    <img class="header-image" src="../assets/images/Homepage connection.svg" />
+                </div>
             </div>
         </div>
     </div>
@@ -110,12 +112,13 @@ const links = computed(() => {
 
 .header-image {
     margin: auto;
+    width: 40%;
 }
 
 .header-subtitle {
     font-size: 50px;
     font-weight: 900;
-    width: 70%;
+    width: 60%;
 }
 
 .sub-description {
