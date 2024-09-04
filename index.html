@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.svg">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anika's Portfolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <div id="not-avail" style="display: none">Not available on mobile devices</div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anika's Portfolio</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <div id="not-avail" style="display: none">
+    <div class="mobile-container">
+      <img class="mobile-image" src="../assets/images/Not available confused panda.png" />
+      <div class="mobile-text">
+        Coding is fun, but also hard. The mobile experience is coming soon. Stay tuned!
+        Until then, please visit 'anikavaish01.github.io' on a bigger device.
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
+
+<style>
+  .mobile-container {
+    background-color: #e1eae2;
+    width: 60%;
+    margin: auto;
+  }
+
+  .mobile-text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #6E8270;
+  }
+
+  .mobile-image {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 30px;
+  }
+</style>

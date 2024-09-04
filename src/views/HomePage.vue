@@ -33,7 +33,7 @@
     </div>
     <div class="footer-container">
       <div class="footer">
-        <div class="footer-title">Let's create together!</div>
+        <div class="footer-title">Let's write together!</div>
         <div class="links">
           <div class="social-links">
           <a class="footer-social-link" href="https://www.linkedin.com/in/anikavaishampayan/" target="_blank">LinkedIn↗</a>
@@ -127,6 +127,7 @@ const links = computed(() => {
     font-weight: 700;
     width: 70%;
     margin-bottom: 20px;
+    color: #474747;
 }
 
 .sub-description {
