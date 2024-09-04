@@ -49,6 +49,12 @@
         </div>
       </div>
     </div>
+    <div class="bottom-text-container">
+        <div class="bottom-text">
+            Crafted with countless code commits + endless calls with the incredibly talented
+            <a class="sahil-link" href="https://www.linkedin.com/in/sahil-sachin-gupte/">Sahil Gupte</a> 🙌🏼
+        </div>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -222,4 +228,19 @@ a {
   margin:auto;
 }
 
+.bottom-text-container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 5px;
+}
+.bottom-text{
+    width: 600px;
+    font-size: 8px;
+}
+.sahil-link{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color:#bfdbc6;
+}
 </style>
