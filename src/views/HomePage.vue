@@ -5,7 +5,10 @@
                 HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER
             </div>
             <div class="header-subtitle">
-            Connecting people together, one story at a time.
+                Connecting people together, one story at a time.
+            </div>
+            <div class="header-description">
+                Want to read a chapter? Scroll down & meet Catelyn, Maria, Romana, & Vishal!
             </div>
             <div class="header-image-wrapper">
                 <img class="header-image" src="../assets/images/Homepage connection.svg" />
@@ -103,6 +106,16 @@ const links = computed(() => {
 .header-title {
     color: #6e8270;
     font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.header-description{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header-image-wrapper{
+    display: flex;
 }
 
 .header-image {
@@ -110,9 +123,10 @@ const links = computed(() => {
 }
 
 .header-subtitle {
-    font-size: 34px;
+    font-size: 50px;
     font-weight: 700;
     width: 70%;
+    margin-bottom: 20px;
 }
 
 .sub-description {
