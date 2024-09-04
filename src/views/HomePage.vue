@@ -1,13 +1,11 @@
 <template>
     <div class="header-container">
         <div class="header-box">
-            <div>
-                <div class="header-title">
-                    HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER
-                </div>
-                <div class="header-subtitle">
-                Connecting people together, one story at a time.
-                </div>
+            <div class="header-title">
+                HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER
+            </div>
+            <div class="header-subtitle">
+            Connecting people together, one story at a time.
             </div>
             <div class="header-image-wrapper">
                 <img class="header-image" src="../assets/images/Homepage connection.svg" />
@@ -86,9 +84,6 @@ const links = computed(() => {
 </style>
 
 <style>
-.header-image-wrapper {
-    display: flex;
-}
 
 .header-container {
     background-color: #e1eae2;
@@ -103,7 +98,6 @@ const links = computed(() => {
     height: 800px;
     margin: auto;
     padding-top: 200px;
-    display: flex;
 }
 
 .header-title {
@@ -118,7 +112,7 @@ const links = computed(() => {
 .header-subtitle {
     font-size: 34px;
     font-weight: 700;
-    width: 60%;
+    width: 70%;
 }
 
 .sub-description {
