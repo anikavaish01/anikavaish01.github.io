@@ -33,8 +33,8 @@
         <div class="footer-title">Let's create together!</div>
         <div class="links">
           <div class="social-links">
-          <a class="footer-social-link" href="https://www.linkedin.com/in/anikavaishampayan/">LinkedIn↗</a>
-          <a class="footer-social-link" href="https://medium.com/mhci-x-princeton-capstone-2024">Medium↗</a>
+          <a class="footer-social-link" href="https://www.linkedin.com/in/anikavaishampayan/" target="_blank">LinkedIn↗</a>
+          <a class="footer-social-link" href="https://medium.com/mhci-x-princeton-capstone-2024" target="_blank">Medium↗</a>
           <a class="footer-social-link" href="mailto:anika.vaishampayan@gmail.com">Email↗</a>
         </div>
         <div class="internal-links">

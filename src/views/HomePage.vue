@@ -1,16 +1,16 @@
 <template>
     <div class="header-container">
         <div class="header-box">
-            <div class="header-title">
-                HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER
-            </div>
-            <div class="header-containter">
+            <div>
+                <div class="header-title">
+                    HELLO! I'M ANIKA! A MIXED-METHODS UX RESEARCHER
+                </div>
                 <div class="header-subtitle">
                 Connecting people together, one story at a time.
                 </div>
-                <div class="header-image-wrapper">
-                    <img class="header-image" src="../assets/images/Homepage connection.svg" />
-                </div>
+            </div>
+            <div class="header-image-wrapper">
+                <img class="header-image" src="../assets/images/Homepage connection.svg" />
             </div>
         </div>
     </div>
@@ -36,7 +36,7 @@
         <div class="links">
           <div class="social-links">
           <a class="footer-social-link" href="https://www.linkedin.com/in/anikavaishampayan/" target="_blank">LinkedIn↗</a>
-          <a class="footer-social-link" href="https://medium.com/mhci-x-princeton-capstone-2024">Medium↗</a>
+          <a class="footer-social-link" href="https://medium.com/mhci-x-princeton-capstone-2024" target="_blank">Medium↗</a>
           <a class="footer-social-link" href="mailto:anika.vaishampayan@gmail.com">Email↗</a>
         </div>
         <div class="internal-links">
@@ -103,6 +103,7 @@ const links = computed(() => {
     height: 800px;
     margin: auto;
     padding-top: 200px;
+    display: flex;
 }
 
 .header-title {
@@ -112,12 +113,11 @@ const links = computed(() => {
 
 .header-image {
     margin: auto;
-    width: 40%;
 }
 
 .header-subtitle {
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 34px;
+    font-weight: 700;
     width: 60%;
 }
 

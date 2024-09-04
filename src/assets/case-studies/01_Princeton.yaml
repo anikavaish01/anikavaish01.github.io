@@ -567,11 +567,13 @@ sections:
           - type: grid-item
             data:
               - type: image
+                link: https://drive.google.com/file/d/1e2x75-AIV9mWCiRNTYLbiAfCyN0jOdwn/view
                 caption: Taming The Terabytes (Vol. I) details our research process, methods, and insights.
                 data: images/Princeton taming the terabytes.png
 
           - type: grid-item
             data:
               - type: image
+                link: https://drive.google.com/file/d/1VMkcwUlWo9fduk2diJP6IHxSd0o66OOT/view
                 caption: Data At Your Fingertips (Vol. II) provides our design rationale for a curated selection of functionalities in TigerData.
                 data: images/Princeton data at your fingertips.png
