@@ -47,6 +47,12 @@
       </div>
     </div>
   </div>
+  <div class="bottom-text-container">
+    <div class="bottom-text">
+        Crafted with countless code commits + endless calls with the incredibly talented
+        <a class="sahil-link" href="https://www.linkedin.com/in/sahil-sachin-gupte/" target="_blank">Sahil Gupte</a> 🙌🏼
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -175,6 +181,24 @@ const imageUrl = computed(() => {
 .internal-links{
   width:50%;
   margin:auto;
+}
+
+.bottom-text-container{
+    padding-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
+.bottom-text{
+    width: 1200px;
+    text-align: center;
+    color: #474747;
+    font-size: 10px;
+}
+
+.sahil-link{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color:#697e65;
 }
 
 </style>

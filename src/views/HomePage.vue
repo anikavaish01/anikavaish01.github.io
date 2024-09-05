@@ -90,6 +90,21 @@ const links = computed(() => {
   background-color: #697e65;
   color: #ffffff
 }
+.bottom-text-container{
+    padding-bottom: 5px;
+    background-color: #697e65;
+}
+.bottom-text{
+    width: 1200px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+}
+.sahil-link{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color:#bfdbc6;
+}
 </style>
 
 <style>
@@ -226,21 +241,5 @@ a {
 .internal-links{
   width:50%;
   margin:auto;
-}
-
-.bottom-text-container{
-    padding-bottom: 5px;
-    background-color: #697e65;
-}
-.bottom-text{
-    width: 1200px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 10px;
-}
-.sahil-link{
-    text-decoration: underline;
-    text-underline-offset: 6px;
-    color:#bfdbc6;
 }
 </style>
