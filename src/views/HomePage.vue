@@ -52,7 +52,7 @@
     <div class="bottom-text-container">
         <div class="bottom-text">
             Crafted with countless code commits + endless calls with the incredibly talented
-            <a class="sahil-link" href="https://www.linkedin.com/in/sahil-sachin-gupte/">Sahil Gupte</a> 🙌🏼
+            <a class="sahil-link" href="https://www.linkedin.com/in/sahil-sachin-gupte/" target="_blank">Sahil Gupte</a> 🙌🏼
         </div>
     </div>
 </template>
@@ -229,14 +229,14 @@ a {
 }
 
 .bottom-text-container{
-    width: 1200px;
-    margin: auto;
-    display: flex;
     padding-bottom: 5px;
+    background-color: #697e65;
 }
 .bottom-text{
-    width: 600px;
-    font-size: 8px;
+    width: 1200px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
 }
 .sahil-link{
     text-decoration: underline;
