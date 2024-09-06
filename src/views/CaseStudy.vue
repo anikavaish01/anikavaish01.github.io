@@ -191,6 +191,7 @@ const imageUrl = computed(() => {
 .bottom-text{
     width: 1200px;
     text-align: center;
+    margin: auto;
     color: #474747;
     font-size: 10px;
 }
